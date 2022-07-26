@@ -1,5 +1,3 @@
-console.log('script linked')
-
 function calculateRockFallVolume(formData) {
   const angle = formData.angle
   const height = formData.height
