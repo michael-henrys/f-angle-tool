@@ -4,7 +4,7 @@ body {
 
 label, input {
   display: block;
-  margin: 5px;
+  margin-bottom: 7px;
 }
 
 input {
