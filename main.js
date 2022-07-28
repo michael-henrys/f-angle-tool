@@ -25,9 +25,19 @@ function handleCalculate(e) {
 
 const form = document.getElementById('calculatorInput')
 form.addEventListener('submit', handleCalculate)
-TESTER = document.getElementById('graph');
-Plotly.newPlot( TESTER, [{
+
+graph = document.getElementById('graph');
+const data = [{
 	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], 
-  { margin: { t: 0 } } 
-)
+	y: [1, 2, 4, 8, 16] }]
+
+const layout = { 
+  margin: {t: 10, l: 30, r: 30, pad: 4}
+} 
+
+const config = {
+  displayModeBar: false,
+  responsive: true
+}
+
+Plotly.newPlot( graph, data, layout, config )
