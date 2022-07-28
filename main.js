@@ -7,8 +7,7 @@ function calculateRockFallVolume(formData) {
   return Math.exp(vol_ln)*surfaceArea;
 }
 
-const form = document.getElementById('calculatorInput')
-form.addEventListener('submit', (e) => {
+function handleCalculate(e) {
   e.preventDefault()
   //get form data
   const formData = {
@@ -22,5 +21,13 @@ form.addEventListener('submit', (e) => {
   //display volume
   const volumeOutput = document.getElementById('volumeOutput')
   volumeOutput.innerHTML = volume.toFixed(0) + ' m<sup>3</sup>'
-})
+}
 
+const form = document.getElementById('calculatorInput')
+form.addEventListener('submit', handleCalculate)
+TESTER = document.getElementById('graph');
+Plotly.newPlot( TESTER, [{
+	x: [1, 2, 3, 4, 5],
+	y: [1, 2, 4, 8, 16] }], 
+  { margin: { t: 0 } } 
+)

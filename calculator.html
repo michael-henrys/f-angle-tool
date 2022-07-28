@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./assets/bootstrap/geonet.v7.css">
   <link rel="stylesheet" href="./assets/font/font-awesome.min.css">
 
+  <script src="./assets/plotly/plotly-2.12.1.min.js"></script>
+
   <title>Tools:ROARS</title>
 </head>
 <body>
@@ -34,7 +36,7 @@
     <div class="row">
       <div class="col-xs-12 col-xm-12 col-md-6">
         <form id="calculatorInput">
-          <div class="row mb-4 align-items-center">
+          <div class="row my-3 align-items-center">
             <div class="col">
               <label class= "col-form-label" for="angle">Average Slope Angle</label>
             </div>
@@ -45,7 +47,7 @@
               <span class="form-text">range: 50 - 90 degrees</span>
             </div>
           </div>
-          <div class="row mb-3 align-items-center">
+          <div class="row my-3 align-items-center">
             <div class="col">
               <label class= "col-form-label" for="height">Slope height</label>
             </div>
@@ -56,7 +58,7 @@
               <span class="form-text">range: 0.0 - 90.0 m</span>
             </div>
           </div>
-          <div class="row mb-4 align-items-center">
+          <div class="row my-3 align-items-center">
             <div class="col">
               <label class= "col-form-label" for="horizontalPGA">Horizontal Peak Ground Acceleration</label>
             </div>
@@ -67,7 +69,7 @@
               <span class="form-text">range: 0.5 - 15.0 m/s<sup>2</sup></span>
             </div>
           </div>
-          <div class="row mb-4 align-items-center">
+          <div class="row my-3 align-items-center">
             <div class="col">
               <label class= "col-form-label" for="surfaceArea">Surface area</label>
             </div>
@@ -78,21 +80,21 @@
               <span class="form-text">range: 0 - 10000 m<sup>2</sup></span>
             </div>
           </div>
-          <div class="row mb-4 align-items-center">
+          <div class="row my-3 align-items-center">
             <div class="col">
               <button type="submit" class="btn btn-primary">Calculate</button>
             </div>
           </div>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <span id="result">Result:</span>
+              <span id="volumeOutput"></span> 
+            </div>
         </form>
-        <div class="row mb-4 align-items-center">
-          <div class="col">
-            <span id="result">Result:</span>
-            <span id="volumeOutput"></span> 
-          </div>
+        
         </div>
       </div>
-      <div class="col-xs-12 col-xm-12 col-md-6">
-        Graph
+      <div id=graph class="col-xs-12 col-xm-12 col-md-6">
       </div>
     </div> 
     
