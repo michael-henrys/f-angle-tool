@@ -58,7 +58,9 @@ function updateGraph(){
   const data = [trace1, trace2]
 
   const layout = { 
-    margin: {t: 10, l: 50, r: 30, pad: 4},
+    title: 'Rock Fall Volume for a range of Horizontal PGA values',
+    showlegend: false,
+    margin: {t: 40, l: 60, r: 30, pad: 4},
     yaxis: {
       title: 'Rockfall Volume (m<sup>3</sup>)',
       rangemode: 'tozero'
