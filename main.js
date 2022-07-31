@@ -1,4 +1,10 @@
-const xValues = [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15]
+//set up x values for graph
+const xValues = []
+const step = 0.25
+const start = 0.5
+for(let i = 0; i < (15 - start)/step; i++){
+  xValues.push(start + i*step)
+}
 
 //set up form and add event listener for calculate button
 const form = document.getElementById('calculatorInput')
@@ -19,13 +25,13 @@ function calculateRockFallVolume(formData) {
   return Math.exp(vol_ln)*surfaceArea;
 }
 
-// function calculateErosionRate(formData) {
-//   const angle = formData.angle
-//   const height = formData.height
-//   const horizontalPGA = formData.horizontalPGA
-//   vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
-//   return Math.exp(vol_ln)
-// }
+function calculateErosionRate(formData) {
+  const angle = formData.angle
+  const height = formData.height
+  const horizontalPGA = formData.horizontalPGA
+  vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
+  return Math.exp(vol_ln)
+}
 
 function update() {
   //get form data
