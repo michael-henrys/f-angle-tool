@@ -19,13 +19,13 @@ function calculateRockFallVolume(formData) {
   return Math.exp(vol_ln)*surfaceArea;
 }
 
-function calculateErosionRate(formData) {
-  const angle = formData.angle
-  const height = formData.height
-  const horizontalPGA = formData.horizontalPGA
-  vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
-  return Math.exp(vol_ln)
-}
+// function calculateErosionRate(formData) {
+//   const angle = formData.angle
+//   const height = formData.height
+//   const horizontalPGA = formData.horizontalPGA
+//   vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
+//   return Math.exp(vol_ln)
+// }
 
 function update() {
   //get form data
@@ -49,22 +49,57 @@ function getFormData(){
 }
 
 function updateGraph(){
+  //get form data
   graph = document.getElementById('graph');
+  //calculate yValues for line based on range of Xvalues
   const yValues = xValues.map(x => calculateRockFallVolume({ ...getFormData(), horizontalPGA: x }))
+  //create line trace
   const trace1 = {
     x: xValues, 
     y: yValues,
     mode: 'lines'
   }
 
-  const trace2 = {
-    x: [form.elements.horizontalPGA.value],
-    y: [calculateRockFallVolume(getFormData())],
+  // calculate uncertainty for line of 10% of volume
+  const yValuesUncertaintyTop = yValues.map(y => y + y*0.1)
+  const yValuesUncertaintyBottom = yValues.map(y => y - y*0.1)
+  const yValuesUncertainty = yValuesUncertaintyTop.concat(yValuesUncertaintyBottom.reverse())
+  const xValuesUncertainty = xValues.concat(xValues.slice().reverse())
+
+  // create trace for uncertainty
+  var trace2 = {
+    x: xValuesUncertainty,
+    y: yValuesUncertainty,
+    fill: "toself", 
+    fillcolor: "rgba(0,100,80,0.2)", 
+    line: {color: "transparent"}, 
+    showlegend: false, 
+    type: "scatter"
+  }
+  
+  //get point coordinates
+  const pointX = form.elements.horizontalPGA.value
+  const pointY  = calculateRockFallVolume(getFormData())
+
+  //calculate uncertainty of 10% for point
+  const pointUncertainty = pointY*0.1
+
+  //create point trace
+  const trace3 = {
+    x: [pointX],
+    y: [pointY],
+    error_y: {
+      type: 'data',
+      array: [pointUncertainty],
+      visible: true
+    },
     mode: 'markers',
   }
   
-  const data = [trace1, trace2]
+  //create data array
+  const data = [trace1, trace2, trace3]
 
+  //define layout
   const layout = { 
     title: {
       text: 'Rock Fall Volume over the range of <br>Horizontal PGA values',
@@ -82,10 +117,12 @@ function updateGraph(){
     }
   } 
 
+  //define layout
   const config = {
     displayModeBar: false,
     responsive: true
   }
 
+  //plot graph
   Plotly.newPlot( graph, data, layout, config )
 }
