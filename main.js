@@ -17,19 +17,16 @@ form.addEventListener('submit', e => {
 update()
 
 function calculateRockFallVolume(formData) {
-  const angle = formData.angle
-  const height = formData.height
-  const horizontalPGA = formData.horizontalPGA
   const surfaceArea = formData.surfaceArea
-  vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
-  return Math.exp(vol_ln)*surfaceArea;
+  const erosionRate = calculateErosionRate(formData)
+  return erosionRate*surfaceArea
 }
 
 function calculateErosionRate(formData) {
   const angle = formData.angle
   const height = formData.height
   const horizontalPGA = formData.horizontalPGA
-  vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
+  const vol_ln =(6.431*Math.log(angle))+(1.576*Math.log(height))+(0.526*Math.log(horizontalPGA))-37.122
   return Math.exp(vol_ln)
 }
 
@@ -38,9 +35,11 @@ function update() {
   formData = getFormData()
   //calculate volume
   const volume = calculateRockFallVolume(formData)
+  const pointUncertainty = volume*0.1
+
   //display volume
   const volumeOutput = document.getElementById('volumeOutput')
-  volumeOutput.innerHTML = volume.toFixed(0) + ' m<sup>3</sup>'
+  volumeOutput.innerHTML = `${volume.toFixed(0)} &plusmn ${pointUncertainty.toFixed(0)} m<sup>3</sup>`
   //update Graph 
   updateGraph()
 }
