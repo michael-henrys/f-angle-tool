@@ -59,50 +59,50 @@ function updateGraph(){
   //calculate yValues for line based on range of Xvalues
   const yValues = xValues.map(x => calculateRockFallVolume({ ...getFormData(), horizontalPGA: x }))
   //create line trace
-  const trace1 = {
+  const line = {
     x: xValues, 
     y: yValues,
     mode: 'lines'
   }
 
-  // calculate uncertainty for line of 10% of volume
-  const yValuesUncertaintyTop = yValues.map(y => y + y*0.1)
-  const yValuesUncertaintyBottom = yValues.map(y => y - y*0.1)
-  const yValuesUncertainty = yValuesUncertaintyTop.concat(yValuesUncertaintyBottom.reverse())
-  const xValuesUncertainty = xValues.concat(xValues.slice().reverse())
+  // // calculate uncertainty for line of 10% of volume
+  // const yValuesUncertaintyTop = yValues.map(y => y + y*0.1)
+  // const yValuesUncertaintyBottom = yValues.map(y => y - y*0.1)
+  // const yValuesUncertainty = yValuesUncertaintyTop.concat(yValuesUncertaintyBottom.reverse())
+  // const xValuesUncertainty = xValues.concat(xValues.slice().reverse())
 
-  // create trace for uncertainty
-  var trace2 = {
-    x: xValuesUncertainty,
-    y: yValuesUncertainty,
-    fill: "toself", 
-    fillcolor: "rgba(0,100,80,0.2)", 
-    line: {color: "transparent"}, 
-    showlegend: false, 
-    type: "scatter"
-  }
+  // // create trace for uncertainty
+  // var uncertainties = {
+  //   x: xValuesUncertainty,
+  //   y: yValuesUncertainty,
+  //   fill: "toself", 
+  //   fillcolor: "rgba(0,100,80,0.2)", 
+  //   line: {color: "transparent"}, 
+  //   showlegend: false, 
+  //   type: "scatter"
+  // }
   
   //get point coordinates
   const pointX = form.elements.horizontalPGA.value
   const pointY  = calculateRockFallVolume(getFormData())
 
-  //calculate uncertainty of 10% for point
-  const pointUncertainty = pointY*0.1
+  // //calculate uncertainty of 10% for point
+  // const pointUncertainty = pointY*0.1
 
   //create point trace
-  const trace3 = {
+  const point = {
     x: [pointX],
     y: [pointY],
-    error_y: {
-      type: 'data',
-      array: [pointUncertainty],
-      visible: true
-    },
+    // error_y: {
+    //   type: 'data',
+    //   array: [pointUncertainty],
+    //   visible: true
+    // },
     mode: 'markers',
   }
   
   //create data array
-  const data = [trace1, trace2, trace3]
+  const data = [line, point]
 
   //define layout
   const layout = { 
