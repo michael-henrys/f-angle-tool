@@ -1,2 +1,2 @@
-# roars-tool
-A prototype of the ELID ROARS tool for GNS Science
+# F-Angle Tool
+A prototype of the EILD F-Angle tool for GNS Science
