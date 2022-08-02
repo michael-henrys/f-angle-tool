@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="row">
-      <h5>Enter values of each of the variables and press Calculate to predict the rockfall volume</h5>
+      <h5>For the input values of:</h5>
     </div>
     <div class="row">
       <div class="col-xs-12 col-xm-12 col-md-6">
@@ -44,61 +44,15 @@
               <label class= "col-form-label" for="angle">Average Slope Angle</label>
             </div>
             <div class="col">
-              <input class= "form-control" type="number" id="angle" name="angle" value="50" min="50" max="90" step="any"> 
-            </div>
-            <div class="col">
-              <span class="form-text">range: 50 - 90 degrees</span>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="height">Slope height</label>
-            </div>
-            <div class="col">
-              <input class= "form-control" type="number" id="height" name="height" value="90" min="0" max="90" step="any"> 
-            </div>
-            <div class="col">
-              <span class="form-text">range: 0.0 - 90.0 m</span>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="horizontalPGA">Horizontal Peak Ground Acceleration</label>
-            </div>
-            <div class="col">
-              <input class= "form-control" type="number" id="horizontalPGA" name="horizontalPGA" value="5" min="0.5" max="15.0" step="any"> 
-            </div>
-            <div class="col">
-              <span class="form-text">range: 0.5 - 15.0 m/s<sup>2</sup></span>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="surfaceArea">Surface area</label>
-            </div>
-            <div class="col">
-              <input class= "form-control" type="number" id="surfaceArea" name="surfaceArea" value="500" min="0" max="10000" step="any"> 
-            </div>
-            <div class="col">
-              <span class="form-text">range: 0 - 10000 m<sup>2</sup></span>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <button type="submit" class="btn btn-primary">Calculate</button>
+              <select class="form-select">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
           </div>           
         </form>
-        <div class="row my-4">
-          <div class="col">
-            <h5>
-              <span id="result">Rockfall Volume:</span>
-              <span id="volumeOutput"></span>
-            </h5> 
-          </div>
-        </div>
       </div>
-        <div id=graph class="col-xs-12 col-xm-12 col-md-6"></div>
     </div>     
   </div>
   <script src="main.js"></script>
