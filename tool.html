@@ -11,7 +11,7 @@
 
   <script src="./assets/plotly/plotly-2.12.1.min.js"></script>
 
-  <title>Tools:F-Angel</title>
+  <title>Tools:F-Angle</title>
 </head>
 <body>
   <div class="container pt-1">
@@ -46,11 +46,36 @@
               <select name="type" id="type" class="form-control form-select">
                 <option value="Debris Avalanche dry">Debris Avalanche dry</option>
                 <option value="Debris Avalanche wet">Debris Avalanche wet</option>
-                <option value="Debris Flow">Debris Alow</option>
+                <option value="Debris Flow">Debris Flow</option>
                 <option value="Rock Avalanche">Rock Avalanche</option>
               </select>
             </div>
-          </div>           
+          </div>
+          <div class="row my-3 align-items-center">
+            <div class="col">
+              <label class= "col-form-label" for="volume">Landslide volume (m<sup>3</sup>)</label>
+            </div>
+            <div class="col">
+              <select name="type" id="volume" class="form-control form-select">
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1,000</option>
+                <option value="10000">10,000</option>
+                <option value="100000">100,000</option>
+                <option value="1000000">1,000,000</option>
+                <option value="10000000">10,000,000</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div id="custom-volume" style="display: none;" class="row my-3 align-items-center">
+            <div class="col">
+              <label class= "form-text" for="custom-volume">Custom Landslide Volume</label>
+            </div>
+            <div class="col">
+              <input type="number" name="custom-volume" class="form-control" id="custom-volume-input">
+            </div>
+          </div>                
         </form>
       </div>
     </div>     
