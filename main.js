@@ -1,3 +1,12 @@
+//define constants from the model
+const constants = {
+  rockAvalanche: {
+    50: {coefficient: 0.0025, exponent: 100000}, 
+    16: {coefficient: 0.0025, exponent: 100000},
+    2: {coefficient: 0.0025, exponent: 100000},
+  }
+}
+
 //show and hide the custom volume input
 const volumeSelector = document.getElementById('volume')
 const volumeInput = document.getElementById('customVolume')
@@ -35,6 +44,17 @@ function getFormData() {
   }
 }
 
+//calculate f angle
+function calculateFAngle(data) {
+  if(!data) {
+    return 'N/A'
+  }
+  const type = data.type
+  switch (type) {
+
+  }
+}
+
 //enforce volume bounds for different landslide types
 function enforceVolumeBounds(data) {
   //hide alert 
@@ -42,7 +62,7 @@ function enforceVolumeBounds(data) {
   alert.style.display = 'none'
   const type = data.type
   switch (type) {
-    case 'Debris Avalanche dry':
+    case 'dryDebris':
       if(data.volume > 100000) {
         //show warning
         alert.innerHTML = 'Dry Debris Avalanches with volumes greater than 100,000 cubic meters will use the Rock Avalanche Dataset'
@@ -50,11 +70,11 @@ function enforceVolumeBounds(data) {
         //return the data with the type changed to Rock Avalanche
         return {
           ...data,
-          type: 'Rock Avalanche'
+          type: 'rockAvalanche'
         }
       }
       return data
-    case 'Rock Avalanche':
+    case 'rockAvalanche':
       if(data.volume < 100000) {
         //show warning
         alert.innerHTML = 'Rock Avalanches with volumes less than 100,000 cubic meters will use the Dry Debris Avalanche Dataset'
@@ -62,24 +82,25 @@ function enforceVolumeBounds(data) {
         //return the data with the type changed to Rock Avalanche
         return {
           ...data,
-          type: 'Debris Avalanche dry'
+          type: 'dryDebris'
         }
       }
       return data
-    case 'Debris Avalanche wet':
+    case 'wetDebris':
       if(data.volume > 100000) {
         //show warning
         alert.innerHTML = 'F-Angle cannot be calculated for Wet Debris Avalanches with volumes greater than 100,000 cubic meters'
         alert.style.display = ''
+        return null
       }
       return data
-    case 'Debris Flow':
+    case 'debrisFlow':
       if(data.volume > 1000000) {
         //show warning
         alert.innerHTML = 'F-Angle cannot be calculated for Debris Flow landslides with volumes greater than 1,000,000 cubic meters'
         alert.style.display = ''
       }
-      return data
+      return null
     default:
       return data
   }
