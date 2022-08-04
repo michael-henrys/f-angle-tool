@@ -1,11 +1,27 @@
-//define constants from the model
+//define model constants
 const constants = {
   rockAvalanche: {
-    50: {coefficient: 0.0025, exponent: 100000}, 
-    16: {coefficient: 0.0025, exponent: 100000},
-    2: {coefficient: 0.0025, exponent: 100000},
+    '50': {coefficient: 4.78, exponent: -0.163147137}, 
+    '16': {coefficient: 3.41, exponent: -0.163147137},
+    '2': {coefficient: 2.43, exponent: -0.163147137},
+  },
+  dryDebris: {
+    '50': {coefficient: 1.08, exponent: -0.033690259}, 
+    '16': {coefficient: 0.90, exponent: -0.033690259},
+    '2': {coefficient: 0.75, exponent: -0.033690259},
+  },
+  wetDebris: {
+    '50': {coefficient: 0.85, exponent: -0.070562028}, 
+    '16': {coefficient: 0.68, exponent: -0.070562028},
+    '2': {coefficient: 0.55, exponent: -0.070562028},
+  },
+  debrisFlow: {
+    '50': {coefficient: 0.82, exponent: -0.107498912},
+    '16': {coefficient: 0.58, exponent: -0.107498912},
+    '2': {coefficient: 0.41, exponent: -0.107498912},
   }
 }
+
 
 //show and hide the custom volume input
 const volumeSelector = document.getElementById('volume')
@@ -27,9 +43,7 @@ alert.style.display = 'none'
 const form = document.getElementById('calculatorInput')
 form.addEventListener('submit', function(e) {
   e.preventDefault()
-  //get values from form
-  const data = enforceVolumeBounds(getFormData())
-  console.log(data)
+  update()
 })
 
 
@@ -44,15 +58,28 @@ function getFormData() {
   }
 }
 
+//update(render) the f angle
+function update() {
+  //get values from form
+  const data = enforceVolumeBounds(getFormData())
+  //calculate f angle
+  const fAngle = calculateFAngle(data)
+  //update f angle in the DOM
+  console.log(fAngle)
+  const fAngleDisplay = document.getElementById('fAngleOutput')
+  fAngleDisplay.value = `${fAngle.toFixed(2)}`
+}
+
 //calculate f angle
 function calculateFAngle(data) {
   if(!data) {
     return 'N/A'
   }
   const type = data.type
-  switch (type) {
-
-  }
+  const POE = data.POE
+  const coefficient = constants[type][POE].coefficient
+  const exponent = constants[type][POE].exponent
+  return radToDeg(Math.atan(coefficient*Math.pow(POE, exponent)))
 }
 
 //enforce volume bounds for different landslide types
@@ -104,4 +131,9 @@ function enforceVolumeBounds(data) {
     default:
       return data
   }
+}
+
+//function to convert radians into degrees
+function radToDeg(rad) {
+  return rad * 180 / Math.PI
 }
