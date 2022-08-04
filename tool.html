@@ -56,7 +56,7 @@
               <label class= "col-form-label" for="volume">Landslide volume (m<sup>3</sup>)</label>
             </div>
             <div class="col">
-              <select name="type" id="volume" class="form-control form-select">
+              <select name="volume" id="volume" class="form-control form-select">
                 <option value="10">10</option>
                 <option value="100">100</option>
                 <option value="1000">1,000</option>
@@ -68,12 +68,43 @@
               </select>
             </div>
           </div>
-          <div id="custom-volume" style="display: none;" class="row my-3 align-items-center">
+          <div id="customVolume" class="row my-3 align-items-center">
             <div class="col">
-              <label class= "form-text" for="custom-volume">Custom Landslide Volume</label>
+              <label class= "form-text" for="customVolume">Custom Landslide Volume</label>
             </div>
             <div class="col">
-              <input type="number" name="custom-volume" class="form-control" id="custom-volume-input">
+              <input type="number" name="customVolume" class="form-control" id="custom-volume-input">
+            </div>
+          </div>
+          <div class="row my-3 align-items-center">
+            <div class="col">
+              <label class= "col-form-label" for="POE">Probability of Exceedence (%)</label>
+            </div>
+            <div class="col">
+              <select name="POE" id="POE" class="form-control form-select">
+                <option value="50">50</option>
+                <option value="16">16</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row my-3 align-items-center">
+            <div class="col">
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+          <div class="row my-3 align-items-center">
+            <div id="alert" class="alert alert-danger" role="alert"></div>
+          </div>    
+          <div class="row my-3 align-items-center">
+            <div class="col">
+              <label class= "col-form-label">F-Angle: </label>
+            </div>
+            <div class="col">
+              <input class="form-control" id="fAngleOutput" readonly></input>
+            </div>
+            <div class="col">
+              <label class= "col-form-label">degrees</label>
             </div>
           </div>                
         </form>
