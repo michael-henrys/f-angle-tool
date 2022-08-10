@@ -76,10 +76,12 @@ function calculateFAngle(data) {
     return 'N/A'
   }
   const type = data.type
+  const volume = data.volume
   const POE = data.POE
   const coefficient = constants[type][POE].coefficient
   const exponent = constants[type][POE].exponent
-  return radToDeg(Math.atan(coefficient*Math.pow(POE, exponent)))
+  console.log(coefficient, exponent)
+  return radToDeg(Math.atan(coefficient*Math.pow(volume, exponent)))
 }
 
 //enforce volume bounds for different landslide types
