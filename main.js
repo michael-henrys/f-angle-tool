@@ -62,19 +62,20 @@ function getFormData() {
 function update() {
   //get values from form
   const data = enforceVolumeBounds(getFormData())
-  //calculate f angle
-  const fAngle = calculateFAngle(data)
-  //update f angle in the DOM
-  console.log(fAngle)
   const fAngleDisplay = document.getElementById('fAngleOutput')
-  fAngleDisplay.value = `${fAngle.toFixed(2)}`
+  if(!data) {
+    fAngleDisplay.value = 'N/A'
+  }else {
+    //calculate f angle
+    const fAngle = calculateFAngle(data)
+    //update f angle in the DOM
+    fAngleDisplay.value = `${fAngle.toFixed(2)}`
+  }
 }
 
 //calculate f angle
 function calculateFAngle(data) {
-  if(!data) {
-    return 'N/A'
-  }
+  
   const type = data.type
   const volume = data.volume
   const POE = data.POE
