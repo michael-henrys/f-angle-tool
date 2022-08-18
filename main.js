@@ -1,24 +1,24 @@
 //define model constants
 const constants = {
   rockAvalanche: {
-    '50': {coefficient: 4.78, exponent: -0.163147137}, 
-    '16': {coefficient: 3.41, exponent: -0.163147137},
-    '2': {coefficient: 2.43, exponent: -0.163147137},
+    '50': {coefficient: 4.7786, exponent: -0.163147137}, 
+    '16': {coefficient: 3.4085, exponent: -0.163147137},
+    '2': {coefficient: 2.4312, exponent: -0.163147137},
   },
   dryDebris: {
-    '50': {coefficient: 1.08, exponent: -0.033690259}, 
-    '16': {coefficient: 0.90, exponent: -0.033690259},
-    '2': {coefficient: 0.75, exponent: -0.033690259},
+    '50': {coefficient: 1.0795, exponent: -0.033690259}, 
+    '16': {coefficient: 0.9026, exponent: -0.033690259},
+    '2': {coefficient: 0.7547, exponent: -0.033690259},
   },
   wetDebris: {
-    '50': {coefficient: 0.85, exponent: -0.070562028}, 
-    '16': {coefficient: 0.68, exponent: -0.070562028},
-    '2': {coefficient: 0.55, exponent: -0.070562028},
+    '50': {coefficient: 0.8467, exponent: -0.070562028}, 
+    '16': {coefficient: 0.6807, exponent: -0.070562028},
+    '2': {coefficient: 0.5472, exponent: -0.070562028},
   },
   debrisFlow: {
-    '50': {coefficient: 0.82, exponent: -0.107498912},
-    '16': {coefficient: 0.58, exponent: -0.107498912},
-    '2': {coefficient: 0.41, exponent: -0.107498912},
+    '50': {coefficient: 0.8169, exponent: -0.107498912},
+    '16': {coefficient: 0.5798, exponent: -0.107498912},
+    '2': {coefficient: 0.4116, exponent: -0.107498912},
   }
 }
 
@@ -61,13 +61,12 @@ function update() {
 
 //calculate f angle
 function calculateFAngle(data) {
-  
   const type = data.type
   const volume = data.volume
   const POE = data.POE
   const coefficient = constants[type][POE].coefficient
   const exponent = constants[type][POE].exponent
-  console.log(coefficient, exponent)
+  console.log(coefficient*Math.pow(volume, exponent))
   return radToDeg(Math.atan(coefficient*Math.pow(volume, exponent)))
 }
 
@@ -115,8 +114,9 @@ function enforceVolumeBounds(data) {
         //show warning
         alert.innerHTML = 'F-Angle cannot be calculated for Debris Flow landslides with volumes greater than 1,000,000 cubic meters'
         alert.style.display = ''
+        return null
       }
-      return null
+      return data
     default:
       return data
   }
