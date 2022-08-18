@@ -32,7 +32,6 @@ for(let i = 0; i < 8; i++){
   }
 }
 
-
 //hide alert 
 const alert = document.getElementById('alert')
 alert.style.display = 'none'
@@ -46,7 +45,6 @@ form.addEventListener('submit', function(e) {
 
 //update on page load
 update()
-
 
 //get data from form
 function getFormData() {
@@ -147,16 +145,13 @@ function radToDeg(rad) {
 }
 
 function updateGraph(formData){
-  //get graph element from DOM
-  const graph = document.getElementById('graph')
-
-  //set up trace for calculated f-angle
+  //set up trace for calculated f-angle point
   const point = {
     x: [formData.volume],
     y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
     mode: 'markers',
     type: 'scatter',
-    name: 'Calculated f-Angle',
+    name: 'Calculated F-Angle',
     marker: {
       color: '#ff0000',
       size: 12
@@ -193,7 +188,6 @@ function updateGraph(formData){
     name: '2% POE'
   }
   
-
   //collect traces to add to graph
   const data = [POEline1, POEline2, POEline3, point]
 
@@ -209,32 +203,34 @@ function updateGraph(formData){
       orientation: 'h',
       y: -0.25
     },
-    margin: {t: 50, l: 75, r: 60, pad: 0},
+    margin: {t: 50, l: 60, r: 60, pad: 0},
     xaxis: {
       title: {
         text: 'Landslide Volume (m<sup>3</sup>)',
         font: {size: 13},
       },
       type: 'log',
-      range: [2, 6]
+      range: [2, 7]
     },
     yaxis: {
       title: {
         text: 'F-Angle (degrees)',
         font: {size: 13},
-        standoff: 10 
+        standoff: 15 
       },
-      range: [10, 50]
+      range: [0, 50]
     },
     autosize: true,
     height: 600
   }
-  //define layout
+  //define config for graph
   const config = {
     displayModeBar: false,
     responsive: true
   }
 
+  //get graph element from DOM
+  const graph = document.getElementById('graph')
   //plot graph
   Plotly.newPlot( graph, data, layout, config )
 }
