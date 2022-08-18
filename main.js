@@ -23,18 +23,6 @@ const constants = {
 }
 
 
-//show and hide the custom volume input
-const volumeSelector = document.getElementById('volume')
-const volumeInput = document.getElementById('customVolume')
-volumeInput.style.display = 'none'
-volumeSelector.addEventListener('change', function(e) {
-  if (e.target.value === 'Other') {
-    volumeInput.style.display = ''
-  } else {
-    volumeInput.style.display = 'none'
-  }
-})
-
 //hide alert 
 const alert = document.getElementById('alert')
 alert.style.display = 'none'
@@ -49,11 +37,9 @@ form.addEventListener('submit', function(e) {
 
 //get data from form
 function getFormData() {
-  const volume = form.elements.volume.value
-  const customVolume = form.elements.customVolume.value
   return {
     type: form.elements.type.value,
-    volume: volume === 'Other' ? customVolume : volume,
+    volume: form.elements.volume.value,
     POE: form.elements.POE.value,
   }
 }
