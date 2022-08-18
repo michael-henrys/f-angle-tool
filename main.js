@@ -22,6 +22,16 @@ const constants = {
   }
 }
 
+//set up x values for graph lines
+const xValues = []
+for(let i = 0; i < 8; i++){
+  let step = Math.pow(10, -1+i)
+  for(let j = 0; j < 9; j++){
+    value = (step+(j*step)).toFixed(1)
+    xValues.push(value)
+  }
+}
+
 
 //hide alert 
 const alert = document.getElementById('alert')
@@ -33,6 +43,9 @@ form.addEventListener('submit', function(e) {
   e.preventDefault()
   update()
 })
+
+//update on page load
+update()
 
 
 //get data from form
@@ -53,21 +66,27 @@ function update() {
     fAngleDisplay.value = 'N/A'
   }else {
     //calculate f angle
-    const fAngle = calculateFAngle(data)
+    const type = data.type
+    const volume = data.volume
+    const POE = data.POE
+    const fAngle = calculateFAngle(type, volume, POE)
     //update f angle in the DOM
     fAngleDisplay.value = `${fAngle.toFixed(2)}`
+    //update graph
+    updateGraph(data)
   }
 }
 
 //calculate f angle
-function calculateFAngle(data) {
-  const type = data.type
-  const volume = data.volume
-  const POE = data.POE
+function calculateFAngle(type, volume, POE) {
   const coefficient = constants[type][POE].coefficient
   const exponent = constants[type][POE].exponent
-  console.log(coefficient*Math.pow(volume, exponent))
   return radToDeg(Math.atan(coefficient*Math.pow(volume, exponent)))
+}
+
+//helper function for calculating f-angle lines on graph for a given type, volume and POE
+function calculateFAngleForPOE(type, volume, POE) {
+  
 }
 
 //enforce volume bounds for different landslide types
@@ -125,4 +144,97 @@ function enforceVolumeBounds(data) {
 //function to convert radians into degrees
 function radToDeg(rad) {
   return rad * 180 / Math.PI
+}
+
+function updateGraph(formData){
+  //get graph element from DOM
+  const graph = document.getElementById('graph')
+
+  //set up trace for calculated f-angle
+  const point = {
+    x: [formData.volume],
+    y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
+    mode: 'markers',
+    type: 'scatter',
+    name: 'Calculated f-Angle',
+    marker: {
+      color: '#ff0000',
+      size: 12
+    }
+  }
+
+  //set up trace for 50% POE line
+  const y50 = xValues.map(x => calculateFAngle(formData.type, x, '50'))
+  const POEline1 = {
+    x: xValues,
+    y: y50,
+    type: 'scatter',
+    mode: 'lines',
+    name: '50% POE'
+  }
+
+  //set up trace for 16% POE line
+  const y16 = xValues.map(x => calculateFAngle(formData.type, x, '16'))
+  const POEline2 = {
+    x: xValues,
+    y: y16,
+    type: 'scatter',
+    mode: 'lines',
+    name: '16% POE'
+  }
+
+  //set up trace for 2% POE line
+  const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
+  const POEline3 = {
+    x: xValues,
+    y: y2,
+    type: 'scatter',
+    mode: 'lines',
+    name: '2% POE'
+  }
+  
+
+  //collect traces to add to graph
+  const data = [POEline1, POEline2, POEline3, point]
+
+  //set up layout for graph
+  const layout = {
+    title: {
+        text: 'F-angle',
+        font: {size: 17},
+        yanchor: 'top',
+      },
+    showlegend: true,
+    legend: {
+      orientation: 'h',
+      y: -0.25
+    },
+    margin: {t: 50, l: 75, r: 60, pad: 0},
+    xaxis: {
+      title: {
+        text: 'Landslide Volume (m<sup>3</sup>)',
+        font: {size: 13},
+      },
+      type: 'log',
+      range: [2, 6]
+    },
+    yaxis: {
+      title: {
+        text: 'F-Angle (degrees)',
+        font: {size: 13},
+        standoff: 10 
+      },
+      range: [10, 50]
+    },
+    autosize: true,
+    height: 600
+  }
+  //define layout
+  const config = {
+    displayModeBar: false,
+    responsive: true
+  }
+
+  //plot graph
+  Plotly.newPlot( graph, data, layout, config )
 }
