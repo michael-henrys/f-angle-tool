@@ -22,16 +22,6 @@ const constants = {
   }
 }
 
-//set up x values for graph lines
-const xValues = []
-for(let i = 0; i < 8; i++){
-  let step = Math.pow(10, -1+i)
-  for(let j = 0; j < 9; j++){
-    value = (step+(j*step)).toFixed(1)
-    xValues.push(value)
-  }
-}
-
 //hide alert 
 const alert = document.getElementById('alert')
 alert.style.display = 'none'
@@ -62,6 +52,7 @@ function update() {
   const fAngleDisplay = document.getElementById('fAngleOutput')
   if(!data) {
     fAngleDisplay.value = 'N/A'
+    updateGraph()
   }else {
     //calculate f angle
     const type = data.type
@@ -143,6 +134,16 @@ function radToDeg(rad) {
 }
 
 function updateGraph(formData){
+  //set up x values for graph lines
+  let xValues = []
+  for(let i = 0; i < 8; i++){
+    let step = Math.pow(10, -1+i)
+    for(let j = 0; j < 9; j++){
+      value = (step+(j*step)).toFixed(1)
+      xValues.push(value)
+    }
+  }
+
   //set up trace for calculated f-angle point
   let data = []
   if(formData !== undefined) {
@@ -156,6 +157,24 @@ function updateGraph(formData){
         color: '#ff0000',
         size: 12
       }
+    }
+
+    //fix xValues to make sure it is the correct range for the landslide type
+    switch (formData.type) {
+      case 'dryDebris':
+        xValues = xValues.filter(x => x <= 100000)
+        break
+      case 'rockAvalanche':
+        xValues = xValues.filter(x => x >= 100000)
+        break
+      case 'wetDebris':
+        xValues = xValues.filter(x => x <= 100000)
+        break
+      case 'debrisFlow':
+        xValues = xValues.filter(x => x <= 1000000)
+        break
+      default:
+        break    
     }
   
     //set up trace for 50% POE line
