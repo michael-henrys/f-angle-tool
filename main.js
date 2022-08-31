@@ -43,8 +43,8 @@ form.addEventListener('submit', function(e) {
   update()
 })
 
-//update on page load
-update()
+//show graph
+updateGraph()
 
 //get data from form
 function getFormData() {
@@ -80,11 +80,6 @@ function calculateFAngle(type, volume, POE) {
   const coefficient = constants[type][POE].coefficient
   const exponent = constants[type][POE].exponent
   return radToDeg(Math.atan(coefficient*Math.pow(volume, exponent)))
-}
-
-//helper function for calculating f-angle lines on graph for a given type, volume and POE
-function calculateFAngleForPOE(type, volume, POE) {
-  
 }
 
 //enforce volume bounds for different landslide types
@@ -146,50 +141,52 @@ function radToDeg(rad) {
 
 function updateGraph(formData){
   //set up trace for calculated f-angle point
-  const point = {
-    x: [formData.volume],
-    y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
-    mode: 'markers',
-    type: 'scatter',
-    name: 'Calculated F-Angle',
-    marker: {
-      color: '#ff0000',
-      size: 12
+  let data = []
+  if(formData !== undefined) {
+    const point = {
+      x: [formData.volume],
+      y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
+      mode: 'markers',
+      type: 'scatter',
+      name: 'Calculated F-Angle',
+      marker: {
+        color: '#ff0000',
+        size: 12
+      }
     }
-  }
-
-  //set up trace for 50% POE line
-  const y50 = xValues.map(x => calculateFAngle(formData.type, x, '50'))
-  const POEline1 = {
-    x: xValues,
-    y: y50,
-    type: 'scatter',
-    mode: 'lines',
-    name: '50% POE'
-  }
-
-  //set up trace for 16% POE line
-  const y16 = xValues.map(x => calculateFAngle(formData.type, x, '16'))
-  const POEline2 = {
-    x: xValues,
-    y: y16,
-    type: 'scatter',
-    mode: 'lines',
-    name: '16% POE'
-  }
-
-  //set up trace for 2% POE line
-  const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
-  const POEline3 = {
-    x: xValues,
-    y: y2,
-    type: 'scatter',
-    mode: 'lines',
-    name: '2% POE'
-  }
   
-  //collect traces to add to graph
-  const data = [POEline1, POEline2, POEline3, point]
+    //set up trace for 50% POE line
+    const y50 = xValues.map(x => calculateFAngle(formData.type, x, '50'))
+    const POEline1 = {
+      x: xValues,
+      y: y50,
+      type: 'scatter',
+      mode: 'lines',
+      name: '50% POE'
+    }
+  
+    //set up trace for 16% POE line
+    const y16 = xValues.map(x => calculateFAngle(formData.type, x, '16'))
+    const POEline2 = {
+      x: xValues,
+      y: y16,
+      type: 'scatter',
+      mode: 'lines',
+      name: '16% POE'
+    }
+  
+    //set up trace for 2% POE line
+    const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
+    const POEline3 = {
+      x: xValues,
+      y: y2,
+      type: 'scatter',
+      mode: 'lines',
+      name: '2% POE'
+    }
+    //collect traces to add to graph
+    data = [POEline1, POEline2, POEline3, point]
+  }
 
   //set up layout for graph
   const layout = {
