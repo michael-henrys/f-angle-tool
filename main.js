@@ -128,6 +128,9 @@ function enforceVolumeBounds(data) {
         alert.style.display = ''
         return null
       }
+      //show caveat for debris flow
+      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
+      alert.style.display = ''
       return data
     default:
       return data
