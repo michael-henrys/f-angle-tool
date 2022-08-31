@@ -22,16 +22,6 @@ const constants = {
   }
 }
 
-//set up x values for graph lines
-const xValues = []
-for(let i = 0; i < 8; i++){
-  let step = Math.pow(10, -1+i)
-  for(let j = 0; j < 9; j++){
-    value = (step+(j*step)).toFixed(1)
-    xValues.push(value)
-  }
-}
-
 //hide alert 
 const alert = document.getElementById('alert')
 alert.style.display = 'none'
@@ -43,8 +33,8 @@ form.addEventListener('submit', function(e) {
   update()
 })
 
-//update on page load
-update()
+//show graph
+updateGraph()
 
 //get data from form
 function getFormData() {
@@ -62,6 +52,7 @@ function update() {
   const fAngleDisplay = document.getElementById('fAngleOutput')
   if(!data) {
     fAngleDisplay.value = 'N/A'
+    updateGraph()
   }else {
     //calculate f angle
     const type = data.type
@@ -80,11 +71,6 @@ function calculateFAngle(type, volume, POE) {
   const coefficient = constants[type][POE].coefficient
   const exponent = constants[type][POE].exponent
   return radToDeg(Math.atan(coefficient*Math.pow(volume, exponent)))
-}
-
-//helper function for calculating f-angle lines on graph for a given type, volume and POE
-function calculateFAngleForPOE(type, volume, POE) {
-  
 }
 
 //enforce volume bounds for different landslide types
@@ -133,6 +119,9 @@ function enforceVolumeBounds(data) {
         alert.style.display = ''
         return null
       }
+      //show caveat for debris flow
+      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
+      alert.style.display = ''
       return data
     default:
       return data
@@ -145,51 +134,81 @@ function radToDeg(rad) {
 }
 
 function updateGraph(formData){
-  //set up trace for calculated f-angle point
-  const point = {
-    x: [formData.volume],
-    y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
-    mode: 'markers',
-    type: 'scatter',
-    name: 'Calculated F-Angle',
-    marker: {
-      color: '#ff0000',
-      size: 12
+  //set up x values for graph lines
+  let xValues = []
+  for(let i = 0; i < 8; i++){
+    let step = Math.pow(10, -1+i)
+    for(let j = 0; j < 9; j++){
+      value = (step+(j*step)).toFixed(1)
+      xValues.push(value)
     }
   }
 
-  //set up trace for 50% POE line
-  const y50 = xValues.map(x => calculateFAngle(formData.type, x, '50'))
-  const POEline1 = {
-    x: xValues,
-    y: y50,
-    type: 'scatter',
-    mode: 'lines',
-    name: '50% POE'
-  }
+  //set up trace for calculated f-angle point
+  let data = []
+  if(formData !== undefined) {
+    const point = {
+      x: [formData.volume],
+      y: [calculateFAngle(formData.type, formData.volume, formData.POE)],
+      mode: 'markers',
+      type: 'scatter',
+      name: 'Calculated F-Angle',
+      marker: {
+        color: '#ff0000',
+        size: 12
+      }
+    }
 
-  //set up trace for 16% POE line
-  const y16 = xValues.map(x => calculateFAngle(formData.type, x, '16'))
-  const POEline2 = {
-    x: xValues,
-    y: y16,
-    type: 'scatter',
-    mode: 'lines',
-    name: '16% POE'
-  }
-
-  //set up trace for 2% POE line
-  const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
-  const POEline3 = {
-    x: xValues,
-    y: y2,
-    type: 'scatter',
-    mode: 'lines',
-    name: '2% POE'
-  }
+    //fix xValues to make sure it is the correct range for the landslide type
+    switch (formData.type) {
+      case 'dryDebris':
+        xValues = xValues.filter(x => x <= 100000)
+        break
+      case 'rockAvalanche':
+        xValues = xValues.filter(x => x >= 100000)
+        break
+      case 'wetDebris':
+        xValues = xValues.filter(x => x <= 100000)
+        break
+      case 'debrisFlow':
+        xValues = xValues.filter(x => x <= 1000000)
+        break
+      default:
+        break    
+    }
   
-  //collect traces to add to graph
-  const data = [POEline1, POEline2, POEline3, point]
+    //set up trace for 50% POE line
+    const y50 = xValues.map(x => calculateFAngle(formData.type, x, '50'))
+    const POEline1 = {
+      x: xValues,
+      y: y50,
+      type: 'scatter',
+      mode: 'lines',
+      name: '50% POE'
+    }
+  
+    //set up trace for 16% POE line
+    const y16 = xValues.map(x => calculateFAngle(formData.type, x, '16'))
+    const POEline2 = {
+      x: xValues,
+      y: y16,
+      type: 'scatter',
+      mode: 'lines',
+      name: '16% POE'
+    }
+  
+    //set up trace for 2% POE line
+    const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
+    const POEline3 = {
+      x: xValues,
+      y: y2,
+      type: 'scatter',
+      mode: 'lines',
+      name: '2% POE'
+    }
+    //collect traces to add to graph
+    data = [POEline1, POEline2, POEline3, point]
+  }
 
   //set up layout for graph
   const layout = {
