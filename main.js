@@ -85,6 +85,8 @@ function enforceVolumeBounds(data) {
         //show warning
         alert.innerHTML = 'Dry Debris Avalanches with volumes greater than 100,000 cubic meters will use the Rock Avalanche Dataset'
         alert.style.display = ''
+        //Change the type on the form to Rock Avalanche
+        form.elements.type.value = 'rockAvalanche'
         //return the data with the type changed to Rock Avalanche
         return {
           ...data,
@@ -97,6 +99,8 @@ function enforceVolumeBounds(data) {
         //show warning
         alert.innerHTML = 'Rock Avalanches with volumes less than 100,000 cubic meters will use the Dry Debris Avalanche Dataset'
         alert.style.display = ''
+        //Change the type on the form to Dry Debris Avalanche
+        form.elements.type.value = 'dryDebris'
         //return the data with the type changed to Rock Avalanche
         return {
           ...data,
