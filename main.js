@@ -265,7 +265,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [2, 7]
+      range: [-1, 7]
     },
     yaxis: {
       title: {
