@@ -57,6 +57,9 @@ form.addEventListener('submit', function(e) {
 //show graph
 updateGraph()
 
+//update volume
+updateVolume()
+
 //get data from form
 function getFormData() {
   return {
