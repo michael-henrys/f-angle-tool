@@ -220,16 +220,16 @@ function updateGraph(formData){
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
       case 'dryDebris':
-        xValues = volumeClasses.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => x <= 100000 && x >= 100)
         break
       case 'rockAvalanche':
         xValues = volumeClasses.filter(x => x >= 100000)
         break
       case 'wetDebris':
-        xValues = volumeClasses.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => x <= 100000 && x >= 100)
         break
       case 'debrisFlow':
-        xValues = volumeClasses.filter(x => x <= 1000000)
+        xValues = volumeClasses.filter(x => x <= 1000000 && x >= 100)
         break
       default:
         break    
@@ -242,7 +242,26 @@ function updateGraph(formData){
       y: y50,
       type: 'scatter',
       mode: 'lines',
-      name: '50% POE'
+      name: '50% POE',
+      line: {
+        width: 3
+      }
+    }
+
+    //set up trace for out of bounds 50% POE line 
+    const y50Grey = volumeClasses.map(x => calculateFAngle(formData.type, x, '50'))
+    const greyLine1 = {
+      x: volumeClasses,
+      y: y50Grey,
+      type: 'scatter',
+      mode: 'lines',
+      hovertext: 'The F-Angle is undefined for this Volume',
+      showlegend: false,
+      line: {
+        width: 1,
+        color: 'black',
+        dash: 'dot'
+      }
     }
   
     //set up trace for 16% POE line
@@ -252,8 +271,28 @@ function updateGraph(formData){
       y: y16,
       type: 'scatter',
       mode: 'lines',
-      name: '16% POE'
+      name: '16% POE',
+      line: {
+        width: 3
+      }
     }
+
+    //set up trace for out of bounds 16% POE line 
+    const y16Grey = volumeClasses.map(x => calculateFAngle(formData.type, x, '16'))
+    const greyLine2 = {
+      x: volumeClasses,
+      y: y16Grey,
+      type: 'scatter',
+      mode: 'lines',
+      hovertext: 'The F-Angle is undefined for this Volume',
+      showlegend: false,
+      line: {
+        width: 1,
+        color: 'black',
+        dash: 'dot'
+      }
+    }
+  
   
     //set up trace for 2% POE line
     const y2 = xValues.map(x => calculateFAngle(formData.type, x, '2'))
@@ -262,10 +301,30 @@ function updateGraph(formData){
       y: y2,
       type: 'scatter',
       mode: 'lines',
-      name: '2% POE'
+      name: '2% POE',
+      line: {
+        width: 3
+      }
     }
+
+    //set up trace for out of bounds 2% POE line 
+    const y2Grey = volumeClasses.map(x => calculateFAngle(formData.type, x, '2'))
+    const greyLine3 = {
+      x: volumeClasses,
+      y: y2Grey,
+      type: 'scatter',
+      mode: 'lines',
+      hovertext: 'The F-Angle is undefined for this Volume',
+      showlegend: false,
+      line: {
+        width: 1,
+        color: 'black',
+        dash: 'dot'
+      }
+    }
+  
     //collect traces to add to graph
-    data = [realDataTrace, POEline1, POEline2, POEline3, point]
+    data = [greyLine1, greyLine2, greyLine3, realDataTrace, POEline1, POEline2, POEline3, point]
   }
 
   //set up layout for graph
