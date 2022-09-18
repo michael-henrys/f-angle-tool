@@ -22,6 +22,27 @@ const constants = {
   }
 }
 
+//set volume classes
+let volumeClasses = []
+for(let i = 0; i < 8; i++){
+  let step = Math.pow(10, -1+i)
+  for(let j = 0; j < 9; j++){
+    value = (step+(j*step)).toFixed(1)
+    volumeClasses.push(value)
+  }
+}
+console.log(volumeClasses)
+
+//add function to update volume on slider change 
+const volumeInput = document.getElementById('volumeInput')
+volumeInput.addEventListener('input', updateVolume)
+
+function updateVolume() {
+  volumeIndex = volumeInput.value
+  const volumeDisplay = document.getElementById('volumeOutput')
+  volumeDisplay.value = `${Number(volumeClasses[volumeIndex]).toFixed(0)}`
+}
+
 //hide alert 
 const alert = document.getElementById('alert')
 alert.style.display = 'none'
@@ -35,6 +56,9 @@ form.addEventListener('submit', function(e) {
 
 //show graph
 updateGraph()
+
+//update volume
+updateVolume()
 
 //get data from form
 function getFormData() {
@@ -191,29 +215,21 @@ function updateGraph(formData){
       }
     }
 
-    //set up x values for graph lines
-    let xValues = []
-    for(let i = 0; i < 8; i++){
-      let step = Math.pow(10, -1+i)
-      for(let j = 0; j < 9; j++){
-        value = (step+(j*step)).toFixed(1)
-        xValues.push(value)
-      }
-    }
+    
 
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
       case 'dryDebris':
-        xValues = xValues.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'rockAvalanche':
-        xValues = xValues.filter(x => x >= 100000)
+        xValues = volumeClasses.filter(x => x >= 100000)
         break
       case 'wetDebris':
-        xValues = xValues.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'debrisFlow':
-        xValues = xValues.filter(x => x <= 1000000)
+        xValues = volumeClasses.filter(x => x <= 1000000)
         break
       default:
         break    
