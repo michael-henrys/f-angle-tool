@@ -1,0 +1,541 @@
+Dataset,ID,Volume (m3),H (m),L (m),H/L,F-Angle
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Berrfottene,"75,000,000",1000,4000,0.25,14
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Bjorkum,"225,000",400,550,0.73,36
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Erdalen,"10,000,000",460,1010,0.46,25
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Frykkjelen,"2,750,000",950,2200,0.43,23
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Furuneset,"750,000",900,1500,0.6,31
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Grande,"650,000",1350,1450,0.93,43
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Gravem,"400,000",900,1500,0.6,31
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Grotlandsura,"9,000,000",500,1200,0.42,23
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Gumpedalen,"40,000,000",720,2200,0.33,18
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Hellaren,"125,000,000",900,4000,0.23,13
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Hjelle,"500,000",730,575,1.27,52
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Hysket,"2,275,000",550,1125,0.49,26
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Kubergan 1,"8,000,000",375,700,0.54,28
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Kubergan 2,"5,000,000",350,640,0.55,29
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Langhammaren,"2,500,000",850,1500,0.57,30
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Melkevoll,"375,000",480,750,0.64,33
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Nakkevanet,"20,000,000",900,2350,0.38,21
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Rorsetura,"2,500,000",650,1100,0.59,31
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Skaersura,"13,500,000",1000,1750,0.57,30
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Store Urdi,"15,000,000",400,1400,0.29,16
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Stolaholmen,"3,500,000",420,960,0.44,24
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Sordalen,"3,750,000",675,1500,0.45,24
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Tjellefonna,"15,000,000",750,2000,0.38,21
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Urdabouri,"19,500,000",470,1350,0.35,19
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Venge,"750,000",760,1700,0.45,24
+"Hermanns et al., 2012. Recommeded hazard and risk classification System for large unstable rock slopes in Norway. NGU Report 2012.029",Verkildsdalen,"15,000,000",675,1600,0.42,23
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Røyrfiten,"510,913",657,1165,0.56,29
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stortunga,"2,462,080",548,1059,0.52,27
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Heimalia_max,"432,000",514,764,0.67,34
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Heimalia_min,"144,000",514,764,0.67,34
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Middagsfjellet,"24,950",256,249,1.03,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stølsdalen,"87,702",597,792,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Rumpevadet,"85,386",728,920,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Gregusbotnen,"1,491,930",757,1601,0.47,25
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Slottet,"66,776",270,407,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Langeland,"1,742,410",378,833,0.45,24
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Ro,"115,639",314,476,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vassura,"591,261",288,619,0.47,25
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Bjoreio,"109,899",387,487,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lauvhjadlen,"63,324",418,454,0.92,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Måbø,"20,041",148,161,0.92,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tveito,"20,845",262,303,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skaggen 2,"236,092",438,441,0.99,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Valur,"615,553",456,454,1,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Båsahaug,"149,158",216,230,0.94,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Møyfallsnuten,"349,045",464,630,0.74,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tyssebotn,"35,618",440,641,0.69,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Reinaskori,"145,298",508,594,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kvitur,"20,263",336,409,0.82,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vidjeurene,"225,682",377,522,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Bakka1,"11,523",132,185,0.71,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Erreskar1,"25,643",358,413,0.87,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nip1,"65,613",462,503,0.92,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nip2,"17,063",365,356,1.03,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storelvi,"45,161",372,325,1.14,49
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lonelia3,"38,058",574,585,0.98,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Bjøllura,"41,603",374,372,1.01,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Ripelsgjelet,"32,207",399,361,1.11,48
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skumpagilet1,"31,354",149,186,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Gangdalsnuten,"21,082",300,452,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nova1,"26,155",233,284,0.82,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kaldesteinane,"21,603",203,277,0.73,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nipeuri,"65,194",243,305,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stavbergsdalen,"30,513",234,312,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Høgdene,"125,835",290,398,0.73,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Streitesdalen,"41,696",457,440,1.04,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skaggen 1,"237,388",616,711,0.87,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hjølmo,"20,286",172,260,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Espekorane,"16,338",242,374,0.65,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vedalsjuvet,"401,055",605,744,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tyssviklia,"288,478",526,702,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Grønedalen,"34,607",382,488,0.78,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Svarthamrane 2,"33,090",399,454,0.88,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Svarthamrane 3,"12,635",127,175,0.73,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Svarthamrane 1,"397,025",546,723,0.76,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lindtona,"95,333",306,417,0.73,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nipa,"11,225",167,218,0.77,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Bulken,"99,616",422,481,0.88,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Mjøstølen,"30,430",109,137,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Buleitegilet,"31,065",310,443,0.7,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storlia,"181,139",740,1288,0.57,30
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Eggene,"108,760",290,450,0.64,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hestehovudet,"61,460",321,364,0.88,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Myranakken,"39,602",363,434,0.84,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Århus,"39,602",260,255,1.02,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Blåfjell,"78,657",455,512,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hjallane,"173,555",511,668,0.76,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Menes,"366,489",1267,1691,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Moldsteinsbakken,"886,981",662,767,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Trondenotten,"40,492",435,371,1.17,49
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hiskredskorane,"38,569",362,362,1,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Sima,"141,629",889,914,0.97,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Ulagilet,"1,100,560",819,1190,0.69,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storøya,"236,427",586,654,0.9,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tveit,"184,334",401,576,0.7,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Øyjorda,"91,972",413,529,0.78,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Sæ,"137,748",732,929,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Simadal,"277,887",569,630,0.9,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Småskorenuten,"40,942",233,293,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skori,"17,339",187,156,1.2,50
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Træstane,"22,500",720,889,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Fitjasetre,"289,594",419,552,0.76,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Slevedalen1,"17,461",137,154,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Slevedalen2,"21,548",273,229,1.19,50
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stegane,"29,333",206,237,0.87,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storenuten2,"194,994",500,596,0.84,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storenuten1,"101,328",575,621,0.93,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Massøyna,"75,591",387,456,0.85,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tveit,"184,334",299,457,0.65,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stigaflot,"685,140",461,699,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Katturda,"118,228",528,688,0.77,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storekammen,"82,771",369,342,1.08,47
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Norddøla 1,"276,790",543,595,0.91,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Midhushagen,"63,565",205,263,0.78,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Midhus,"118,048",294,431,0.68,34
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skredena,"201,898",451,536,0.84,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Orrøyna,"27,832",250,349,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Svining,"480,119",496,623,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Fjelaleitet,"19,334",168,208,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Urane,"3,047,810",574,841,0.68,34
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Liasete,"1,076,980",358,506,0.71,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Trolltunga,"99,791",322,426,0.76,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Eikeskorane,"19,613",358,315,1.14,49
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lonelia2,"38,075",417,436,0.96,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Botnagilet2,"39,139",149,167,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Fuglaskor1,"32,433",276,254,1.09,47
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Fuglaskor2,"19,556",254,260,0.98,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Furelundsheia,"43,883",184,256,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Bjørkholmen,"75,942",330,384,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hjellafjellet,"233,054",402,539,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vasskredura,"593,198",507,653,0.78,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Sandarvollia,"1,181,990",919,1394,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storabrekka,"3,605,210",776,1503,0.52,27
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Eitrheim,"118,528",541,567,0.95,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Byrkjeneset,"11,013",251,206,1.22,51
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nuten,"17,468",227,224,1.01,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vetletunga,"72,785",437,493,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Norddøla 2,"176,114",301,416,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Slaget,"27,841",191,223,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Røyso,"31,510",417,310,1.35,53
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hjølmadalen,"95,783",368,478,0.77,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kastdalen,"92,798",343,333,1.03,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kovurane,"127,023",343,518,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Øyre,"183,655",514,528,0.97,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Langedalen,"159,274",447,453,0.99,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Heimstetjørni,"35,437",209,245,0.85,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vaulane,"27,627",346,369,0.94,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lægreid,"18,629",202,248,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Botnagilet3,"12,461",189,197,0.96,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nova,"13,159",188,229,0.82,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Farestveit,"19,999",139,223,0.62,32
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Krossfjellet,"61,163",282,278,1.01,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Renneskor,"10,107",212,269,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Tierhaug,"28,691",164,249,0.66,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Brekke,"14,608",146,172,0.85,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Glopura,"37,057",508,517,0.98,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Byrkjenes,"24,151",272,250,1.09,47
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Sankliskorane2,"14,308",402,419,0.96,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Juldalsgilet,"147,890",228,310,0.74,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Koven,"209,543",400,499,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stadena,"26,133",331,363,0.91,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Grønsdal,"32,338",265,362,0.73,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Erreskar2,"16,041",92,107,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stølsnuten1,"186,879",541,519,1.04,46
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Stølsnuten2,"60,790",453,557,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Natten,"38,467",232,200,1.16,49
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Ovnen,"77,458",546,545,1,45
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hellefjell,"15,229",133,178,0.75,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Guddalsdalen1,"11,244",116,137,0.85,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Guddalsdalen2,"12,928",171,195,0.88,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Guddalsdalen3,"12,701",136,153,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skinabergsnuten4,"54,950",268,311,0.86,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Øvrehusknotten,"118,134",372,404,0.92,43
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Mauranger1,"47,897",259,268,0.97,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kvinnheradskyrkja,"2,116,400",739,1165,0.63,32
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Austdølo1,"103,249",276,220,1.25,51
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Austdølo2,"13,774",255,201,1.27,52
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Hallestigen,"75,579",496,459,1.08,47
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Oksen1,"12,698",176,244,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Vikastølen,"17,384",231,302,0.76,37
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Glomsdalsskardet,"19,531",218,184,1.18,50
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skinabergsnuten3,"60,679",501,701,0.71,35
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Markaskorane,"185,467",433,444,0.98,44
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Rindafjellet1,"125,100",356,438,0.81,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Rindafjellet2,"188,857",377,477,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skeidsfjellet1,"34,062",302,341,0.89,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Skeidsfjellet2,"20,857",262,225,1.16,49
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Midnuten1,"32,084",244,357,0.68,34
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Freim,"70,362",504,638,0.79,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kyrkjeberg,"501,919",520,433,1.2,50
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kinsarvik,"8,591,140",1153,3006,0.38,21
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Trollagjel,"520,506",635,695,0.91,42
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Norddøla3,"310,366",577,798,0.72,36
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Fjellskor,"13,134",347,254,1.37,54
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Møyfallsnuten2,"59,465",266,418,0.64,33
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Møyfallsnuten3,"45,691",681,853,0.8,39
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Lyngberg,"496,363",869,1135,0.77,38
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Storur,"391,445",599,686,0.87,41
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Nipane,"105,284",856,1025,0.84,40
+"Kolstad, 2021. The controlling factors for runout lengths for ""steinskred"" in Hordaland, developing a new alpha-beta method. M.Sc. Thesis. NTNU",Kvannbergbakken,"57,264",241,306,0.79,38
+"Sakals et al., 2012. The Todagin Creek landslide of October 3, 2006, Northwest British Columbia, Canada. Landslides 9 (1)",Todagin,"4,000,000",771,1885,0.409,22
+"Brideau et al., 2012. Three-dimensional distinct element modelling and dynamic runout analysis of a landslide in gneissic rock, British Columbia. Bulletin of Engineering Geology and the Environment. 71(2):467-486",McAuley Creek,"7,400,000",,,0.285,16
+"Boultbee et al., 2006. The Zymoetz River rock avalanche, June 2002, British Columbia, Canada. Engineering Geology 83(1-3):76-93",Zymoetz River,"1,000,000",1245,3500,0.356,20
+"Geertsema et al., 2006. A large rockslide-debris avalanche in cohesive soil at Pink Mountain, northeastern British Columbia, Canada. Engineering Geology 83(1-3):64-75",Pink Mountain,"1,040,000",450,1850,0.243,14
+"Lu et al., 2003. The Mosque Mountain Rockslide, Sustut Watershed, Fort St. James, Northern British Columbia, Canada. 3rd Canadian Conference on Geotechnique and Natural Hazards, Edmonton, AB",Mosque,"5,000,000",400,1200,0.333,18
+"Guthrie et al., 2012. The 6 August Mount Meager rock slide-debris flow, Coast Mountains, British Columbia: characteristics, dynamics, and miplications for hazard and risk assessment. Natural Hazards Earth System Science 12:1277-1294",Mount Meager,"48,500,000",,,0.172,10
+"Begueria et al., 2009. Comparison of three landslide runout models on the Turnoff Creek rock avalanche, British Columbia. Landslides Processes Conference:A tribute to Theo van Asch. Strasbourg.",Turnoff Creek,"4,000,000",,,0.28,16
+"Geertsema et al., 2006. An overview of recent large catastrophic landslides in northern British Columbia, Canada. Engineering Geology 83(1-3):120-143",Chisca,"1,000,000",,,0.24,13
+"Geertsema et al., 2006. An overview of recent large catastrophic landslides in northern British Columbia, Canada. Engineering Geology 83(1-3):120-143",Harold Price,"1,600,000",,,0.18,10
+"Blais-Stevens, A., et al., 2015. Complex Landslide Triggered in an Eocen Volcanic-Volcanoclastic Succession along Sutherland River, British Columbia, Canada. Environmental and Engineering Geoscience 21(1):35-45",Sutherland,"3,000,000",270,1450,0.186,11
+"Moore and Matthews, 1978. Rubble Creek Landslide, southwestern British Columbia. Canadian Journal of Earth Sciences 15 (7)",Rubble Creek Landslide,"25,000,000",1160,4600,0.252,14
+"Levson et al., 2003. Quaternary Geology of the Atlin area; Edwards and Bye, 2003. Preliminary resutls of field mapping, GIS spatial analysis, and major-element geochemistry, Ruby Mountain volcano;",Ruby Volcano,"60,000,000",800,3600,0.222,13
+"Nichol et al., 2002. Large-scale brittle and ductile toppling of rock slopes. Canadian Geotechnical Journal 39(4):773-778",Mystery Creek,"40,000,000",1150,4000,0.288,16
+"Brideau et al., 2010. Preliminary description and slope stability analyses of the 2008 Little Salmon Lake and 2007 Mt. Steele landslides, Yukon. In: Yukon Exploration and Geology. Yukon Geological Survey. ",Little Salmon Lake,"2,000,000",515,2050,0.251,14
+"Brideau et al., 2019. Evolution of the 2014 Vulcan Creek landslide-dammed lake, Yukon, Canada, using field and remote survey techniques. Landslides 16:1823-1840",Vulcan Creek Landslide,"500,000",,,0.315,17
+"Huscroft et al., 2004. A regional characterization of landslides in the Alaska Highway corridor, Yukon. Yukon Geological Survey, Open File 2004-18",Aishihik River Landslide,"22,000,000",530,2100,0.252,14
+"Evans et al., 1987. A rock avalanche triggered by the October 1985 North Nahanni earthquake, District of Mackenzie, NWT. Canadian Journal of Earth Sciences 24(1)",Nahanni Bute,"6,000,000",,,0.259,15
+"Couture, R. 1998. Contributions aux aspects mécaniques et physiques des écroulements rocheux. PhD thesis, Laval University, 573 p",Queen Elizabeth,"45,000,000",910,2645,0.344,19
+"Couture, R. 1998. Contributions aux aspects mécaniques et physiques des écroulements rocheux. PhD thesis, Laval University, 573 p",Slide Mountain,"10,000,000",410,1650,0.248,14
+"Cruden and Eaton, 1987. Reconnaissance of rockslide hazards in Kananaskis Country, Alberta. Canadian Geotechnical Journal 24(3):414-429",Mount Sparrowhawk,"30,000,000",840,2300,0.365,20
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Beaver Flats North,"4,130,000",,,0.319,18
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Beaver Flats South,"4,820,000",,,0.246,14
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Jonas Creek North,"5,400,000",,,0.272,15
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Jonas Creek South,"10,200,000",,,0.37,20
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Maligne Lake,"498,000,000",,,0.167,9
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Medicine Lake ,"86,000,000",,,0.262,15
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Rocky Mountain Slides - Mount Kitchener,"39,100,000",,,0.205,12
+"Cruden, 1976. Major rockslide in the Rockies. Canadian Geotechnical Journal 13(1):8-20",Frank Slide,"36,500,000",830,3000,0.277,15
+"Cruden, 1982. Brazeau Lake slide Jasper National Park, Alberta. Canadian Journal of Earth Sciences 19(5):975-981",Brazeau Lake Slide,"4,500,000",,,0.325,18
+"Hungr and Evans, 2004. Entrainment of debris in rock avalanches: An analysis of a long run-out mechanism. GSA Bulletin 116 (9/10): 1240 -1252 ",Eagle Pass (Clanwilliam),"120,000",,,0.601,31
+"Hungr and Evans, 2004. Entrainment of debris in rock avalanches: An analysis of a long run-out mechanism. GSA Bulletin 116 (9/10): 1240 -1252 ",Nomash River,"735,000",,,0.246,14
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Avalanche Lake North,"30,000,000",,,0.18,10
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Avalanche Lake South lobe,"40,000,000",,,0.18,10
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Damocles Slide,"20,000,000",300,3250,0.092,5
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Rockslide Pass,"450,000,000",,,0.137,8
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Triple Slide,"45,000,000",,,0.17,10
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Twin Slides - West arm,"5,000,000",,,0.17,10
+"Eisbacher, G.H., 1977. Rockslides in the Mackenzie Mountains, District of Mackenzie. Geological Survey of Canada, Paper 77-1A; Eisbacher, G.H., 1978. Observations on the streaming mechanism of large rock slides, Northern Cordillera. Geological Survey of Canada, Paper 78-1A; Eisbacher, G.H., 1979. Cliff collapse and rock avalanches (sturzstroms) in the Mackenzie Mountains, northwestern Canada. Canadian Geotechnical Journal 16: 309-334.",Mackenzie Mountains - Twin Slides - East arm,"5,000,000",,,0.19,11
+"Jackson and Isobe, 1990. Rock avalanches in the Pelly Mountains, Yukon Territory, Geological Survey of Canada Paper 901E: 263 - 269",Pelly Mountain Rock Avalanches - 1,"3,100,000",,,0.194,11
+"Jackson and Isobe, 1990. Rock avalanches in the Pelly Mountains, Yukon Territory, Geological Survey of Canada Paper 901E: 263 - 269",Pelly Mountain Rock Avalanches - 2,"2,100,000",,,0.287,16
+"Jackson and Isobe, 1990. Rock avalanches in the Pelly Mountains, Yukon Territory, Geological Survey of Canada Paper 901E: 263 - 269",Pelly Mountain Rock Avalanches - 3,"2,500,000",,,0.176,10
+"Jackson and Isobe, 1990. Rock avalanches in the Pelly Mountains, Yukon Territory, Geological Survey of Canada Paper 901E: 263 - 269",Pelly Mountain Rock Avalanches - 5,"980,000",,,0.268,15
+"Ryder et al., 1990. Rock avalanches Texas Creek, British Columbia. Canadian Journal of Earth Sciences 27(10).",Texas Creek Fraser near Lillooet - mid Holocene,"45,000,000",,,0.287,16
+"Friele and Clague, 2004. Large Holocene landslides from Pylon Peak, southwestern British Columbia. Canadian Journal of Earth Sciences 41(2)",Mt Cayley Debris Avalanche 1984,"740,000",,,0.34,19
+"Clague and Southers, 1982. Dusty Creek landslide Mount Cayley. Canadian Journal of Earth Sciences 19(3):524 - 539",Mt Cayley Landslide 1963,"5,000,000",,,0.38,21
+"Hsu, 1975. Catastrophic Debris Streams (Struzstroms) generated by rockfalls. Geological Society of America Bulletin 86:129-140",Hope Slide,"48,000,000",,,0.44,24
+"Friele et al., 2020. Observations of the May 2019 Joffre Peak landslides, British Columbia. Landslides 17:913-930","Joffre Peak, 13 May 2019","1,800,000",1220,4200,0.22,12
+"Friele et al., 2020. Observations of the May 2019 Joffre Peak landslides, British Columbia. Landslides 17:913-930","Joffre Peak, 16 May 2019","3,100,000",1350,4300,0.22,12
+"McColl, 2020. The anomalously old bush stream rock avalanche and its implications for landslide inventories in dynamic landscapes 8(103)",Old Bush Stream,"75,000,000",820,4000,0.205,12
+"Hancox and Thomson, 2013. The January 2013 Mt Haast rock avalanche and Ball Ridge rock fall in Aoraki/Mt Cook National Park, New Zealand. GNS Science report; 2013/33",Ball Ridge,"150,000",205,75,0.366,20
+"Hancox and Thomson, 2013. The January 2013 Mt Haast rock avalanche and Ball Ridge rock fall in Aoraki/Mt Cook National Park, New Zealand. GNS Science report; 2013/33",Mount Haast,"1,000,000",2900,940,0.324,18
+"Hancox et al, 2010. The nature and significance of landslides caused by Mw 7.6 earthquake of 15 July 2009 in Fiordland, New Zealand. Proceedings of 11th IAEG Congress Auckland September 2010, p219-228",Rosy Morn,"50,000",120,146,0.822,39
+"Cox et al., 2015. Rock avalanche on 14 July 2014 from Hillary Ridge, Aoraki/Mount Cook, New Zealand. Landslides",Hillary Ridge,"900,000",3900,1736,0.445,24
+"Carey et al., 2015. The January 2013 Wanganui River debris flood resulting from a large rock avalanche from Mt Evans, Westland, New Zealand. Landslides 12:961-972",Mount Evans,"4,000,000",6000,1500,0.25,14
+"Carey et al., 2015. The January 2013 Wanganui River debris flood resulting from a large rock avalanche from Mt Evans, Westland, New Zealand. Landslides 12:961-972",County Glacier,"1,000,000",2500,1000,0.4,22
+"McColl and Davies 2011. Evidence for a rock avalanche origin for 'The Hillocks' ""morraine"", Otago, New Zealand. Geomorphology 127:216 - 224",Hillocks,"22,500,000",5300,1700,0.321,18
+"Lee et al. 2009. Successive holocene rock avalanches at Lake Coleridge, Canterbury, New Zealand. Landslides 6:287-297",Lake Coleridge,"10,400,000",1725,495,0.28,16
+"Barth, 2014. The Cascade rock avalanche: implications of a very large Alpine Fault-triggered failure, New Zealand. Landslides.",Cascade,"750,000,000",1400,180,0.129,7
+"Barth, 2014. The Cascade rock avalanche: implications of a very large Alpine Fault-triggered failure, New Zealand. Landslides.",Round Top,"45,000,000",1450,310,0.214,12
+"Hancox et al., 2005. The October 1999 Mt Adams rock avalanche and subsequent landslide dam?break
+flood and effects in Poerua river, Westland, New Zealand, New Zealand Journal of Geology and
+Geophysics, 48:4, 683-705",Mount Adams,"12,500,000",1790,3000,0.597,31
+"Smith et al., 2006. The Acheron rock avalanche, Canterbury, New Zealand - morphology and dynamics. Landslides 3:62 -72",Acheron,"10,000,000",700,3500,0.2,11
+"Beetham et al., 2002. Four extremely large landslides in New Zealand, In: Landslides, 1st Edition",Waikaremoana,"2,500,000,000",,,0.08,5
+"Beetham et al., 2002. Four extremely large landslides in New Zealand, In: Landslides, 1st Edition",Waikareiti,"29,000,000,000",,,0.19,11
+"Beetham et al., 2002. Four extremely large landslides in New Zealand, In: Landslides, 1st Edition",Te Putere,"900,000,000",,,0.1,6
+"Beetham et al., 2002. Four extremely large landslides in New Zealand, In: Landslides, 1st Edition",Tiniroto,"1,500,000,000",,,0.06,3
+"Hancox and Perrin 2009. Green Lake Landslide and other giant and very large postglacial landslides in Fiordland, New Zealand. Quaternary Science Reviews 28(11-12):1020-1036",Green Lake,"27,000,000,000",1100,6500,0.169,10
+"Hancox and Perrin 2009. Green Lake Landslide and other giant and very large postglacial landslides in Fiordland, New Zealand. Quaternary Science Reviews 28(11-12):1020-1036",Lochnagar,"700,000,000",960,3200,0.3,17
+"Massey et al. 2013 Evolution of an Overflow Channel Across the Young River Landslide Dam, New Zealand. In Landslide Science and Practice p 43-49",Young River,"11,000,000",1050,1800,0.583,30
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Stanley,"18,000,000",780,2500,0.312,17
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Matakitaki (Lake Mud),"18,100,000",380,1970,0.193,11
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Marina,"10,500,000",620,1520,0.408,22
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",The Haystack (Kakapo River),"8,200,000",563,2500,0.225,13
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Stanley River (lower),"2,400,000",900,2090,0.431,23
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Allen River,"4,400,000",540,1130,0.478,26
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Beautiful River,"3,000,000",710,1600,0.444,24
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Elmer,"15,000,000",670,1730,0.387,21
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Goat Stream (Mokihinui River),"4,200,000",530,1870,0.283,16
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Johnson Ridge,"3,600,000",870,2940,0.296,16
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Rubble Creek,"5,600,000",380,1100,0.345,19
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Gouland Creek,"3,200,000",460,1190,0.387,21
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Tangent Creek,"2,800,000",640,1000,0.64,33
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Matiri (upper valley),"2,300,000",550,1600,0.344,19
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Lindsay,"4,800,000",700,1340,0.522,28
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",McNabb Creek,"3,400,000",554,900,0.616,32
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Johnson Creek (Right Branch),"3,000,000",350,1000,0.35,19
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Stern Creek (southern  Matiri Range),"22,000,000",730,4000,0.183,10
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Ugly River (upper valley),"2,200,000",660,1420,0.465,25
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Mercury Creek,"2,000,000",600,1000,0.6,31
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Ngakawau River,"1,700,000",460,1910,0.241,14
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Ferris Creek,"2,100,000",780,1380,0.565,29
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Garibaldi Ridge,"2,400,000",640,2000,0.32,18
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Garibaldi Ridge a,"4,700,000",500,1400,0.357,20
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Garibaldi Ridge b,"1,400,000",880,1200,0.733,36
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Garilbaldi Ridge c,"3,100,000",770,2060,0.374,21
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Sphinx Plateau (Fern Flat),"3,700,000",580,1600,0.363,20
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Ugly River (lower valley),"1,700,000",480,1300,0.369,20
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Discovery Creek,"1,200,000",310,300,1.033,46
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Mt. Gorgeous (Johnson River),"1,600,000",370,950,0.389,21
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Downey Creek,"1,700,000",450,500,0.9,42
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Kakapo Saddle,"1,000,000",550,940,0.585,30
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Moonstone Lake (Karamea River),"1,100,000",270,300,0.9,42
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Lake Barfoot (Beautiful River),"3,500,000",670,1200,0.558,29
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Beautiful River (upper valley),"1,200,000",410,900,0.456,25
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Rubble Creek (lower valley),"2,000,000",490,1100,0.445,24
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Greys Creek,"1,200,000",300,600,0.5,27
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Venus Creek,"1,900,000",560,700,0.8,39
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Aoreme Saddle,"1,500,000",370,750,0.493,26
+"Hancox et al., 2016. Landslides caused by the MS 7.8 Murchison Earthquake of 17 June 1929 in northwest South Island, New Zealand. GNS Science Report 2015/42. 105 p",Kakapo River (Kakapo Hut),"3,600,000",760,1700,0.447,24
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Saidmarreh,"20,000,000,000",,,0.08,5
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Flims,"12,000,000,000",,,0.13,7
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Engelberg,"2,750,000,000",,,0.22,12
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Pamir,"1,500,000,000",,,0.24,13
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Siders,"1,300,000,000",,,0.14,8
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Tamins,"1,000,000,000",,,0.1,6
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Fernpass,"800,000,000",,,0.09,5
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Glarnish,"280,000,000",,,0.25,14
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Blackhawk,"250,000,000",,,0.13,7
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Vajont,"250,000,000",,,0.34,19
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Silver Reef,"220,000,000",,,0.13,7
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Poschiavo,"150,000,000",,,0.36,20
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Kandertal,"140,000,000",,,0.19,11
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Obersee,"120,000,000",,,0.36,20
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Scima da Saoseo,"80,000,000",,,0.25,14
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Diablerets,"50,000,000",,,0.34,19
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Gros Ventre,"38,000,000",,,0.17,10
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Goldau,"35,000,000",,,0.19,11
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Voralpsee,"30,000,000",,,0.33,18
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Sherman,"30,000,000",,,0.19,11
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Madison Canyon,"29,000,000",,,0.27,15
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Corno di Doste,"20,000,000",,,0.32,18
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Disentis,"15,000,000",,,0.36,20
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Little Tahoma Peak,"11,000,000",,,0.29,16
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Elm,"10,500,000",,,0.26,15
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Wengen,"5,500,000",,,0.42,23
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Wengen S.,"2,500,000",,,0.45,24
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Val Lagone,"650,000",,,0.44,24
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Schachental,"500,000",,,0.58,30
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Airolo,"500,000",,,0.64,33
+"Scheidegger, 1973. On the prediction of the reach and velocity of catastrophic landslides. Rock Mechanics 5:231-236",Lecco,"30,000",,,0.88,41
+"Locat et al., 2006. Assessment of the fragmentation energy in rock avalanches. Geohazards 2003",Claps de Luc,"2,000,000",370,800,0.46,25
+"Locat et al., 2006. Assessment of the fragmentation energy in rock avalanches. Geohazards 2003",Charmonetier,"130,000",520,600,0.87,41
+"Locat et al., 2006. Assessment of the fragmentation energy in rock avalanches. Geohazards 2003",Arvel,"610,000",250,350,0.71,35
+"Sanders et al., 2021. Medieval age determined for the hitherto undescribed/undated rock avalanche of Munster (Inn valley, Eastern Alps). Geomorphology 389",Munster,"10,500,000",1365,4760,0.29,16
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Felsberg,"100,000",,,0.9,42
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Haltenguet,"150,000",,,0.3,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Fidaz,"400,000",,,1,45
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Winkelmatten,"250,000",,,0.7,35
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Fionnay,"400,000",,,0.3,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Prayon,"200,000",,,0.5,27
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Tucketthutte,"6,000,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Val Brenta,"8,000,000",,,0.6,31
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lago di Antrona,"12,000,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Hintersee,"13,000,000",,,0.38,21
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Ludiano,"14,000,000",,,0.51,27
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Biasca,"15,000,000",,,0.55,29
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Brione,"16,000,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Grand Clapier,"16,000,000",,,0.49,26
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Monte Corno,"17,500,000",,,0.31,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Mordbichl,"20,000,000",,,0.4,22
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lago di Alleghe,"20,000,000",,,0.51,27
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Kals,"20,000,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",St Andre,"21,000,000",,,0.47,25
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",San Giovanni,"25,000,000",,,0.16,9
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Haiming,"29,500,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Haslensee,"30,000,000",,,0.42,23
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Dobratsch,"30,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Torbole,"30,000,000",,,0.31,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Monte Avi,"40,000,000",,,0.24,13
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Kleines Rinderhorn,"40,000,000",,,0.25,14
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Pontives,"50,000,000",,,0.42,23
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Marquartstein,"50,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Obernbergtal,"56,500,000",,,0.19,11
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lac Lauvitel,"68,000,000",,,0.34,19
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Pletzachkogel,"80,000,000",,,0.3,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lofer,"80,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Am Saum,"100,000,000",,,0.4,22
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Oberterzen,"100,000,000",,,0.32,18
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Mallnitz,"100,000,000",,,0.25,14
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Cap de la Madeleine,"115,000,000",,,0.36,20
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Oeschinensee,"120,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lavini di Marco,"150,000,000",,,0.21,12
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Abimes de Myans,"150,000,000",,,0.22,12
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Masiere di vedane,"170,000,000",,,0.23,13
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Dobratsch 1,"170,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Bormio,"180,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Tschirgant,"210,000,000",,,0.16,9
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lago di Tovel,"250,000,000",,,0.25,14
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Dobratsch 2,"360,000,000",,,0.25,14
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Parpan-Lenzerheide,"400,000,000",,,0.27,15
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Lago di Molveno,"400,000,000",,,0.24,13
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Eibsee,"400,000,000",,,0.19,11
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Marocche im Sarcatal,"469,000,000",,,0.31,17
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Monte Spinale,"550,000,000",,,0.23,13
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Totalp,"600,000,000",,,0.17,10
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Dejenstock,"600,000,000",,,0.21,12
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Sliders (Sierre),"2,000,000,000",,,0.11,6
+"Li, T., 1983. A mathematical model for predicting the extent of a major rockfall. Zeitschrift fur Geomorphologie 27(4):473-482",Kofels,"2,100,000,000",,,0.18,10
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Wenjia Gully,"50,000,000",1320,4000,0.33,18
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Shuimo Gully,"19,960,000",860,2000,0.43,23
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Dawauji,"16,330,000",880,1900,0.46,25
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Donghekour,"15,000,000",640,2400,0.27,15
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Hongshi Gully,"13,410,000",1040,2700,0.39,21
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Wonqian,"12,000,000",560,1600,0.35,19
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Xiaojiashan,"7,810,000",930,1350,0.69,35
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Niumian Gully,"7,500,000",800,2640,0.3,17
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Liqi Gully,"5,360,000",650,1500,0.43,23
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Caocaoping,"5,340,000",580,1340,0.43,23
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Huoshi Gully,"4,680,000",700,1320,0.53,28
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Shibangou,"4,500,000",650,1800,0.36,20
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Xiejiadianzi,"4,000,000",720,1600,0.45,24
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Dashui Gully,"3,150,000",560,1400,0.4,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Changping,"2,840,000",500,1200,0.42,23
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Xiaomuling,"2,740,000",710,1025,0.69,35
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Baishuling,"2,570,000",620,1200,0.52,27
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Dawan,"2,480,000",480,1000,0.48,26
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Xiaojiashan,"2,385,500",650,1135,0.57,30
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Shicouzi,"1,920,000",640,1200,0.53,28
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Changtan,"1,640,000",1050,1650,0.64,33
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Hongmagong,"1,540,000",330,800,0.41,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Baiguocun,"1,470,000",260,800,0.33,18
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Qinglongcun,"1,390,000",200,600,0.33,18
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Pengjiashan,"1,290,000",580,1000,0.58,30
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Longwancun,"920,000",460,860,0.53,28
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Zhangzhengbo,"920,000",320,800,0.4,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Dujiayan,"860,000",400,880,0.45,24
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Madiping,"860,000",395,740,0.53,28
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Yandiaowo,"820,000",390,800,0.49,26
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Chuangzi Gully,"820,000",295,670,0.44,24
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Zhaojiashan,"700,000",280,700,0.4,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Weiziping,"620,000",240,600,0.4,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Maochogshan2,"570,000",500,740,0.68,34
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Waqianshan,"560,000",250,620,0.4,22
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Muhongping,"540,000",420,970,0.43,23
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Dapingshang,"520,000",365,640,0.57,30
+Zhan W. Fan X. Huang R. Pei X. Xu Q. Li W. 2017. Empirical prediction for travel distance of channelized rock avalanches in the Wenchuan earthquake area. Natural Hazards and Earth System Sciences. 17. 833-844. ,Liushping2,"400,000",240,580,0.41,22
+"Fan et al., 2019. The ""long"" runout rock avalanche in Pusa, China, on August 28, 2017: a preliminary report. Landslides 16:139-154",Pusa landslide,"823,000",267,788,0.34,19
+"Ren et al., 2018. The grain size distribution and composition of the Touzhai rock avalanche deposit in Yunnan, China. Engineering Geology 234",Touzhai,"9,000,000",760,3400,0.22,12
+"Zeng et al., 2019. Morphology and inner structure of Luanshibao rock avalanche in Litang, China and its implications for long-runout mechanisms. Engineering Geology 260 (8)",Luanshibao,"67,000,000",890,4000,0.22,12
+"Zeng et al., 2018. Characteristics and runout mechanism of super large xinmo rock avalanche debris flow in diexi, sichuan province. Journal of Engineering Geology 26(1):193-206 ",Ximo,"7,500,000",1150,2450,0.47,25
+Zhou et al. 2020. Nature and timing of a prehistoric giant landslide on the eastern margin of the Tibetan Plateau. Journal of Mountain Science 17(6):2438-1451,Beijing Daashan,"30,000",176,234,0.75,37
+"Zeng et al. 2020 From surface morphologies to inner structures: insights into hypermobility of the Nixu rock avalanche, southern Tibet, China. Landslides 18:124-143",Nixu,"47,000,000",890,4960,0.18,10
+"Lai et al. 2021. Formation mechanism and evolution process of the Chanda rock avalanche in southeast Tibet, China. Landslides DOI 10.1007/s10346-021-01793-4",Chada rock avalanche,"6,620,000",1450,3155,0.46,25
+"von Wartburg et al. 2020. Constraining the Age and Source Area of the Molveno landslide deposits in the Brenta Group, Trentino Dolomites (Italy). Frontiers in Earth Science 8 (164)",Molveno,"600,000,000",,,0.24,13
+"Corominas, 1996. The angle of reach as a mobility index for small and large landslides. Canadaian Geotechnical Journal 33(2)",Gosol-1,"3,981,072",78,332,0.23,13
+"Govi et al., 2002. Val Pola rock avalanche of July 28, 1987, in Valtellina (Central Italian Alps). Reviews in Engineering Geology (XV):71-89",Val Pola,"34,000,000",1390,3950,0.35,19
+"Porter SC, Orombelli G. 1980. Catastrophic rockfall of September 12, 1717 on the Italian flank of the Mont Blanc massif. Zeitschrift für Geomorphologie 24: 200– 218",Triolet,"18,000,000",1860,7200,0.26,15
+"Post, 1967. Effects of the March 1964 Alaska Earthquake on Glaciers. In: The Alaska Earthquake March 27 1964: Effects of the Hydrologic Regimen. U.S. Geological Survey Professional Paper 544-D pp D1-D42",Steller-I,"20,000,000",1200,6700,0.18,10
+"Post, 1967. Effects of the March 1964 Alaska Earthquake on Glaciers. In: The Alaska Earthquake March 27 1964: Effects of the Hydrologic Regimen. U.S. Geological Survey Professional Paper 544-D pp D1-D42",Allen-4,"23,000,000",1300,7700,0.17,10
+"Post, 1967. Effects of the March 1964 Alaska Earthquake on Glaciers. In: The Alaska Earthquake March 27 1964: Effects of the Hydrologic Regimen. U.S. Geological Survey Professional Paper 544-D pp D1-D42",Fairweather,"26,000,000",3300,10000,0.33,18
+"Post, 1967. Effects of the March 1964 Alaska Earthquake on Glaciers. In: The Alaska Earthquake March 27 1964: Effects of the Hydrologic Regimen. U.S. Geological Survey Professional Paper 544-D pp D1-D42",Schawn,"27,000,000",1550,6100,0.25,14
+"Alean, 1984, Ice avalanches and landlsides on Grosser Alenschglescher. Zeitschrift fur Gletscherkunde und Glaziageologie 20: 9-25.",Jungfraujoch,"150,000",435,1200,0.36,20
+"Govi, M., and P. F. Sorzana (1977), Effetti geologici del terremoto: Frane,Riv. Ital. Paleontol. Stratigr.,83(2), 329–368.",Boscatz,"100,000",550,610,0.9,42
+"Jibson, 1992. The Mameyes, Puerto Rico, landslide disaster of October 7, 1985. Landslides/Landslides Mitigation 9:37-54",Mameyes,"300,000",60,266,0.23,13
+"Sassa, 1988. Geotechnical model for the motion of landslides (Special Lecture)",Jizukiyama,"5,000,000",215,746,0.29,16
+D'Elia et al. 1985. Some effects on natural slope stability induced by the 1980 Italian earthquake. 11th International Conference on Soil Mechanics and Foundation Engineering (San Fransico). ,Torella L.,"20,000,000",197,1160,0.17,10
+D'Elia et al. 1985. Some effects on natural slope stability induced by the 1980 Italian earthquake. 11th International Conference on Soil Mechanics and Foundation Engineering (San Fransico). ,Andretta,"30,000,000",200,1375,0.15,9
+"Legros, 2002. The mobility of long-runout landslides. Engineering Geology 63:301-331","Deyen, Glarus","600,000,000",740,6600,0.11,6
+"Legros, 2002. The mobility of long-runout landslides. Engineering Geology 63:301-331",Garnish,"800,000,000",1900,7500,0.25,14
+"Legros, 2002. The mobility of long-runout landslides. Engineering Geology 63:301-331",Mombiel,"800,000",370,800,0.46,25
+"Legros, 2002. The mobility of long-runout landslides. Engineering Geology 63:301-331",Poshivo,"150,000,000",1500,4100,0.37,20
+"Cancelli & Scezi, 1987. A case history of landslide in complex formation. Proceedings of the International Conference and Field Workshop on Landslides. Christchurch New Zealand, pp. 11-18.",Voltaggio,"500,000",77,201,0.38,21
+"Palmer, L. 1977. Large Landslides of the Columbia River Gorge, Oregon and Washington. In Landslides (D.R. Coates, ed.), Reviews in Engineering Geology, Vol. 3, Geological Society of America, Boulder, Cob., pp. 69-83.",Wind Mt.,"190,000,000",505,4550,0.11,6
+"Wyrwoll, 1986. Characteristics of a planar slide: Hamersley Range, Western Australia, Engineering Geology 22: 335-348.",Mt. Bruce,"900,000",90,424,0.21,12
+"Panet, 2010. L’éboulement du mont Granier en novembre 1248. Rev. Fr. Geotech Numéro 131-132:65-69",Mont Granier,"15,000,000",1620,7300,0.22,12
+"Coe et al., 2018. Increasing rock-avalanche size and mobility in Glacier Bay National Park and Preserve, Alaska detected from 1984 to 2016 Landsat imagery. Landslides 15:393-407",West Salt Creek,"54,500,000",650,4600,0.14,8
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",Devils Castle,"1,800,000",431,1800,0.24,13
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",Kelsey Peak,"4,500,000",1511,4300,0.35,19
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",Grandview Peak,"15,300,000",553,3200,0.17,10
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",Smith and Morehouse,"41,000,000",647,2700,0.24,13
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",South Fork,"2,400,000",333,1300,0.26,15
+"Pedersen et al. 2020. Characterization and Dynamic Analysis of the Devils Castle Rock Avalanche, Alta, Utah. Environmental and Engineering Geoscience 26(2):201-215",White Pine,"1,490,000",440,1200,0.37,20
+"Stock and Uhrhammer, 2010. Catastrophic rock avalanche 3600 years BP from El Capitan, Yosemite Valley, California. Earth Surface Processes and Landforms 35:941-951",El Capitan,"2,190,000",950,710,1.34,53
+"Castleton et al. 2016. Dynamics and legacy of 4.8 ka rock avalanche that dammed Zion Canyon, Utah, USA. GSA Today 26 (6)",Sentinel Rock Avalanche,"286,000,000",1108,3300,0.34,19
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
