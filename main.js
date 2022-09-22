@@ -346,7 +346,8 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [-1, 7]
+      range: [-1, 7],
+      fixedrange: true
     },
     yaxis: {
       title: {
@@ -354,15 +355,22 @@ function updateGraph(formData){
         font: {size: 13},
         standoff: 15 
       },
-      range: [0, 50]
+      range: [0, 50],
+      fixedrange: true
     },
     autosize: true,
     height: 600
   }
   //define config for graph
   const config = {
-    displayModeBar: false,
-    responsive: true
+    displayModeBar: true,
+    displaylogo: false,
+    modeBarButtonsToRemove: ['select2d', 'lasso2d'],
+    responsive: true,
+    toImageButtonOptions: {
+      format: 'png', // one of png, svg, jpeg, webp
+      filename: 'f-angle-plot',    
+    },
   }
 
   //get graph element from DOM
