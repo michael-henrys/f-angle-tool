@@ -32,20 +32,73 @@
     </div>
     <div class="markdown-body">
       <h4>Introduction</h4>
-          <hr>
-          <p>
-            Estimating the potential runout distance of a landslide and its associated impacted area is an important component of landslide hazard and risk analysis. Empirically based methods rely on the debris inundation area of past landslides of a given type, to estimate the anticipated debris inundation area of future landslides of a similar type This can be done using empirical runout analysis methods, where the travel distance of landslide is proportional to its fall height (Figure 1). The tangent of the ratio of the fall height (ΔH) to horizontal runout distance (L) between the crest of the source zone and toe of the deposit, known as the “Fahrböschung”, has subsequently been correlated with landslide volume (V) for different landslide types.
-          </p>
-          <div class="figure my-3 mx-auto">
-            <img src="./assets/images/user-guide/figure1.png" class="figure-img" width="350">
-            <figcaption class="figure-caption">
-              Figure 1: Schematic representation of the fall height (∆H) and runout distance (L) parameters for a landslide and the conceptual relationship between ∆H/L or the Fahrböschung angle (α) and the landslide volume (modified from McDougall, 2017).
-            </figcaption>
-          </div>
-          <p>
-            The following text steps through and provides guidance for the use of the F-Angle tool, particularly with regards to defining the input values required for the tool. This includes 1) Landslide Type, 2) Landslide Volume, and 3) Probability of Exceedance (POE) threshold. 
-          </p>
-    </div>
+      <hr>
+      <p>
+        Estimating the potential runout distance of a landslide and its associated impacted area is an important component of landslide hazard and risk analysis. Empirically based methods rely on the debris inundation area of past landslides of a given type, to estimate the anticipated debris inundation area of future landslides of a similar type This can be done using empirical runout analysis methods, where the travel distance of landslide is proportional to its fall height (Figure 1). The tangent of the ratio of the fall height (ΔH) to horizontal runout distance (L) between the crest of the source zone and toe of the deposit, known as the “Fahrböschung”, has subsequently been correlated with landslide volume (V) for different landslide types.
+      </p>
+      <div class="figure my-3">
+        <img src="./assets/images/user-guide/figure1.png" class="figure-img mx-auto d-block" width="350">
+        <figcaption class="figure-caption">
+          Figure 1: Schematic representation of the fall height (∆H) and runout distance (L) parameters for a landslide and the conceptual relationship between ∆H/L or the Fahrböschung angle (α) and the landslide volume (modified from McDougall, 2017).
+        </figcaption>
+      </div>
+      <p>
+        The following text steps through and provides guidance for the use of the F-Angle tool, particularly with regards to defining the input values required for the tool. This includes 1) Landslide Type, 2) Landslide Volume, and 3) Probability of Exceedance (POE) threshold. 
+      </p>
+      <h4>1.	Define the Landslide Type</h4>
+      <hr>
+      <p>
+        The first step to using the F-Angle Tool is to correctly characterise and define the landslide type. Understanding what landslide type can occur at a given location is important since the different landslide types have typical behaviour (e.g., velocity of displacement, reoccurrence, travel distance) that affects how hazardous they can be. Empirical relationships are established for three landslide types: debris avalanches, rock avalanches and debris flows (following the Hungr et al., 2014 terminology).
+      </p>
+      <p>
+        <b>Debris Avalanches</b> are very rapid to extremely rapid shallow flow of partially or fully saturated debris on steep sleep, without confinement in an established channel (i.e. they occur on an open slope). For the empirical relationship, <i>debris avalanches are defined as landslides with a volume of less than 100,000 m<sup>3</sup>.</i>
+      </p>
+      <p>
+        Debris avalanches are distinct from rockfalls as rockfalls comprise individual fragments that move as independent rigid bodies interacting with the substrate by means of episodic impacts while debris avalanches move in a flow like manner as masses of interacting fragments and water.
+      </p>
+      <p>
+        For the <i>empirical relationship we define two relationships depending on whether the debris is dry or wet</i>, as the saturation of the debris material is an important control on landslide mobility. The landslide practitioner must determine the saturation state of the material, by considering the triggering factors (e.g., earthquake triggered landslides are likely to be dry, and rainfall triggered landslides are likely to be wet), and initial water content of the landslide source material.
+      </p>
+      <div class="figure my-3">
+        <img src="./assets/images/user-guide/figure2.png" class="figure-img mx-auto d-block" width="500">
+        <figcaption class="figure-caption">
+          Figure 2: a) Block Diagram of a Debris Avalanche and b) Example Photograph of a dry debris avalanche triggered during the 2016 Kaikōura Earthquake. Photography by D. Townsend, GNS Science.
+        </figcaption>
+      </div>
+      <p>
+        <b>Rock Avalanches</b> are extremely rapid (>5 m/s) massive flowlike motion of fragmented rock from a large rockslide or rock fall. Large rock avalanches have a degree of mobility that exceeds the behaviour of a smaller-volume frictional flow or dry, angular, broken rock. To capture the increase in mobility, the <i>empirical relationship for rock avalanches are applied to landslide volumes greater than 100,000 m<sup>3</sup>.</i>
+      </p>
+      <div class="figure my-3">
+        <img src="./assets/images/user-guide/figure3.png" class="figure-img mx-auto d-block" width="500">
+        <figcaption class="figure-caption">
+          Figure 3: Hapuku rock avalanche triggered by the 2016 Kaikōura earthquake. The deposit extends outside current field-of-view. Photography by D. Townsend, GNS Science.
+        </figcaption>
+      </div>
+      <p>
+        <b>Debris Flows</b> are very rapid to extremely rapid surging flow of saturated debris in a steep channel (i.e. <u>they are channelised</u>). Strong entrainment of material and water from the flow path can occur along the runout path from scour of channel bed sediment or collapse of stream banks. The bulk of the material involved in a debris-flow event can sometime originate from entrainment within the runout path.  Debris flows often occur simultaneously with floods. The debris flow may be initiated by a debris slide, debris avalanche or rockfall from a steep bank, or by spontaneous instability of the steep stream bed. <i>The empirical relationship are for debris flows up to 1 M m<sup>3</sup>.</i> Changes in debris flow volume and momentum due to entrainment have the potential to influence debris flow velocity and travel distance (Iverson et al. 2011). Therefore, to estimate the potential travel path and hazard footprint of a debris flow, the Fahrböschung angle should be used in conjunction with geomorphic evidence (e.g. debris or alluvial fans) to determine the maximum extent of debris flow hazard footprint.
+      </p>
+      <div class="figure my-3">
+        <img src="./assets/images/user-guide/figure4.png" class="figure-img mx-auto d-block" width="500">
+        <figcaption class="figure-caption">
+          Figure 4: a) Block Diagram of a Debris Flow and b) Example Photograph of a debris flow triggered by rain in Eastbourne, Wellington in November 2006. Photograph by G. Hancox, GNS Science. 
+        </figcaption>
+      </div>
+      <h4>2.	Define the Landslide Volume</h4>
+      <hr>
+      <p>
+        The “Fahrböschung” angle is correlated with landslide volume (V) for different landslide types, with larger landslides having higher mobility (see Figure 1). Therefore, it is important to provide as accurate as possible estimates of landslide volume. This can be done via field measurements, area to volume scaling relationships etc. 
+      </p>
+      <h4>3. Define the Probability of Exceedance (POE) threshold to be used</h4>
+      <hr>
+      <p>
+        Empirically based relationships between the “Fahrböschung” angle and landslide volume represent the compilation of landslides with different site conditions (e.g., source geology, local topography, grain-size of failed material, water content of source material and erodible material along the travel path, vegetation, buildings, the presence (or not) of mitigation measures). The range of site-specific conditions results in the variability of observed landslide debris runout and inundation area. The variability in the landslide debris runout and inundation data also allows for the probability of runout exceedance or limits of confidence to be defined for the prediction of runout for each landslide volume (e.g., Li, 1983). For example, the best fit (orange) line in Figure 5, represents and exceedance probability of 50%, i.e. half of all the landslides of the given volume and type will travel further than this line while the 10% line (yellow) represents a 10% chance that a similar landslide will travel further (McDougall, 2017).
+      </p>
+      <div class="figure my-3 mx-auto d-block text-center">
+        <img src="./assets/images/user-guide/figure5.png" class="figure-img mx-auto d-block" width="500">
+        <figcaption class="figure-caption">
+          Figure 5: Schematic representation of runout exceedance probability based on empirical relationships (McDougall, 2017). 
+        </figcaption>
+      </div>
   </div>
   <script src="./assets/bootstrap/bootstrap.v5.bundle.min.js"></script>
 </body>
