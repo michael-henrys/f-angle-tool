@@ -36,19 +36,23 @@
       <h5>For the input values of:</h5>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-xm-12 col-md-6">
+      <div class="col-md-12 col-lg-4">
         <form id="calculatorInput">
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="type">Landslide type</label>
+          <div class="card">
+            <div class="card-header">
+              <strong>Variable inputs</strong>
             </div>
-            <div class="col">
-              <select name="type" id="type" class="form-control form-select">
-                <option value="dryDebris">Debris Avalanche dry</option>
-                <option value="wetDebris">Debris Avalanche wet</option>
-                <option value="debrisFlow">Debris Flow</option>
-                <option value="rockAvalanche">Rock Avalanche</option>
-              </select>
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Landslide type</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for angle.">
+                <select name="type" id="type" class="form-control form-select">
+                  <option value="dryDebris">Debris Avalanche dry</option>
+                  <option value="wetDebris">Debris Avalanche wet</option>
+                  <option value="debrisFlow">Debris Flow</option>
+                  <option value="rockAvalanche">Rock Avalanche</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="row my-3 align-items-center">
