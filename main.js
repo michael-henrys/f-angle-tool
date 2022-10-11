@@ -84,7 +84,7 @@ function update() {
     const POE = data.POE
     const fAngle = calculateFAngle(type, volume, POE)
     //update f angle in the DOM
-    fAngleDisplay.value = `${fAngle.toFixed(2)}`
+    fAngleDisplay.innerHTML = `${fAngle.toFixed(2)}°`
     //update graph
     updateGraph(data)
   }

@@ -77,30 +77,25 @@
             <div class="alert alert-warning my-3" id="alert"></div>
           </div>
           <button id="submitButton" type="submit" class="btn btn-lg btn-primary my-3 mb-4 px-5">Calculate</button>
-  
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label">F-Angle: </label>
-            </div>
-            <div class="col">
-              <input class="form-control" id="fAngleOutput" readonly></input>
-            </div>
-            <div class="col">
-              <label class= "col-form-label">degrees</label>
-            </div>
-          </div>
-          <div class="row my-4">
-            <div class="col">
-              <p>
-                <a href="./about.html#limitations-disclaimers">Limitations and disclaimers</a>
-              </p>
-            </div>
-          </div>                
+          <p>
+            <a href="./about.html#limitations-disclaimers">Limitations and disclaimers</a>
+          </p>      
         </form>
       </div>
-      <div class="col-xs-12 col-xm-12 col-md-6">
-        <div id="graph"></div>
+      <div class="col-md-12 col-lg-8">
+        <div class="card">
+          <div class="card-header">
+            <strong>Calculation Output</strong>
+          </div>
+          <div class="card-body">
+            <div id="graph"></div>
+            <hr>
+            <label class= "form-text mb-1"><strong>F-Angle</strong></label>
+            <div id="fAngleOutput" class="p-2 mb-3 rounded bg-light w-50">&nbsp;</div>
+          </div>
+        </div>
       </div>
+
     </div>     
   </div>
   <script src="main.js"></script>
