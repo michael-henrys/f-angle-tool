@@ -60,6 +60,12 @@ updateGraph()
 //update volume
 updateVolume()
 
+var tooltips = document.getElementsByClassName('tooltip-icon')
+for (var i = 0; i < tooltips.length; i++) {
+  var tooltip = new bootstrap.Tooltip(tooltips[i])
+}
+  
+
 //get data from form
 function getFormData() {
   return {
@@ -148,7 +154,7 @@ function enforceVolumeBounds(data) {
         return null
       }
       //show caveat for debris flow
-      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
+      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. <br> F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
       alert.style.display = ''
       return data
     default:
