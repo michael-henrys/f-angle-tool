@@ -342,8 +342,9 @@ function updateGraph(formData){
       },
     showlegend: true,
     legend: {
-      orientation: 'h',
-      y: -0.25
+      x: 1.4,
+      xanchor: 'right',
+      y: 1
     },
     margin: {t: 50, l: 60, r: 60, pad: 0},
     xaxis: {
@@ -352,7 +353,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [-1, 7],
+      range: [0.01, 7],
       fixedrange: true
     },
     yaxis: {
