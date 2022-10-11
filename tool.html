@@ -41,8 +41,8 @@
             </div>
             <div class="card-body">
               <div class="mb-3">
-                <label class="form-text mb-1 me-1" for="angle">Landslide type</label>
-                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for angle.">
+                <label class="form-text mb-1 me-1" for="angle">Landslide Type</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide type.">
                 <select name="type" id="type" class="form-control form-select">
                   <option value="dryDebris">Debris Avalanche dry</option>
                   <option value="wetDebris">Debris Avalanche wet</option>
@@ -50,29 +50,27 @@
                   <option value="rockAvalanche">Rock Avalanche</option>
                 </select>
               </div>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="volume">Landslide volume (m<sup>3</sup>)</label>
-            </div>
-            <div class="col">
-              <input id="volumeInput" type="range" min="27" max="71">
-            </div>
-            <div class="col">
-              <input class="form-control" name="volume" id="volumeOutput" readonly></input>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="POE">Probability of Exceedence (%)</label>
-            </div>
-            <div class="col">
-              <select name="POE" id="POE" class="form-control form-select">
-                <option value="50">50</option>
-                <option value="16">16</option>
-                <option value="2">2</option>
-              </select>
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Landslide Volume (m<sup>3</sup>)</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <input id="volumeInput" type="range" min="27" max="71">
+                  </div>
+                  <div class="col">
+                    <input class="form-control" name="volume" id="volumeOutput" readonly></input>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Probability of Exceedence (%)</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <select name="POE" id="POE" class="form-control form-select">
+                  <option value="50">50</option>
+                  <option value="16">16</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="row my-3 mx-2 align-items-center">
