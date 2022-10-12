@@ -60,6 +60,12 @@ updateGraph()
 //update volume
 updateVolume()
 
+var tooltips = document.getElementsByClassName('tooltip-icon')
+for (var i = 0; i < tooltips.length; i++) {
+  var tooltip = new bootstrap.Tooltip(tooltips[i])
+}
+  
+
 //get data from form
 function getFormData() {
   return {
@@ -84,7 +90,7 @@ function update() {
     const POE = data.POE
     const fAngle = calculateFAngle(type, volume, POE)
     //update f angle in the DOM
-    fAngleDisplay.value = `${fAngle.toFixed(2)}`
+    fAngleDisplay.innerHTML = `${fAngle.toFixed(2)}°`
     //update graph
     updateGraph(data)
   }
@@ -148,7 +154,7 @@ function enforceVolumeBounds(data) {
         return null
       }
       //show caveat for debris flow
-      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
+      alert.innerHTML = 'For debris flows, entrainment along runout path can substantially alter runout distance. <br> F-Angle output should be used in conjunction with geomorphic evidence (e.g. debris fan extent), and not supersede it.'
       alert.style.display = ''
       return data
     default:
@@ -336,8 +342,9 @@ function updateGraph(formData){
       },
     showlegend: true,
     legend: {
-      orientation: 'h',
-      y: -0.25
+      x: 1.4,
+      xanchor: 'right',
+      y: 1
     },
     margin: {t: 50, l: 60, r: 60, pad: 0},
     xaxis: {
@@ -346,7 +353,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [-1, 7],
+      range: [0.01, 7],
       fixedrange: true
     },
     yaxis: {

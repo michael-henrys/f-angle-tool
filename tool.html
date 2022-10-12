@@ -33,79 +33,72 @@
       </div>
     </div>
     <div class="row">
-      <h5>For the input values of:</h5>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-xm-12 col-md-6">
+      <div class="col-md-12 col-lg-4">
         <form id="calculatorInput">
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="type">Landslide type</label>
+          <div class="card">
+            <div class="card-header">
+              <strong>Variable inputs</strong>
             </div>
-            <div class="col">
-              <select name="type" id="type" class="form-control form-select">
-                <option value="dryDebris">Debris Avalanche dry</option>
-                <option value="wetDebris">Debris Avalanche wet</option>
-                <option value="debrisFlow">Debris Flow</option>
-                <option value="rockAvalanche">Rock Avalanche</option>
-              </select>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="volume">Landslide volume (m<sup>3</sup>)</label>
-            </div>
-            <div class="col">
-              <input id="volumeInput" type="range" min="27" max="71">
-            </div>
-            <div class="col">
-              <input class="form-control" name="volume" id="volumeOutput" readonly></input>
-            </div>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label" for="POE">Probability of Exceedence (%)</label>
-            </div>
-            <div class="col">
-              <select name="POE" id="POE" class="form-control form-select">
-                <option value="50">50</option>
-                <option value="16">16</option>
-                <option value="2">2</option>
-              </select>
-            </div>
-          </div>
-          <div class="row my-3 mx-2 align-items-center">
-            <button type="submit" class="btn btn-primary">Calculate</button>
-          </div>
-          <div class="row my-3 align-items-center">
-            <div id="alert" class="alert alert-danger" role="alert"></div>
-          </div>    
-          <div class="row my-3 align-items-center">
-            <div class="col">
-              <label class= "col-form-label">F-Angle: </label>
-            </div>
-            <div class="col">
-              <input class="form-control" id="fAngleOutput" readonly></input>
-            </div>
-            <div class="col">
-              <label class= "col-form-label">degrees</label>
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Landslide Type</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide type.">
+                <select name="type" id="type" class="form-control form-select">
+                  <option value="dryDebris">Debris Avalanche dry</option>
+                  <option value="wetDebris">Debris Avalanche wet</option>
+                  <option value="debrisFlow">Debris Flow</option>
+                  <option value="rockAvalanche">Rock Avalanche</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Landslide Volume (m<sup>3</sup>)</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <input id="volumeInput" type="range" min="27" max="71">
+                  </div>
+                  <div class="col">
+                    <input class="form-control" name="volume" id="volumeOutput" readonly></input>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-text mb-1 me-1" for="angle">Probability of Exceedence (%)</label>
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <select name="POE" id="POE" class="form-control form-select">
+                  <option value="50">50</option>
+                  <option value="16">16</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="row my-4">
-            <div class="col">
-              <p>
-                <a href="./about.html#limitations-disclaimers">Limitations and disclaimers</a>
-              </p>
-            </div>
-          </div>                
+          <div>
+            <div class="alert alert-warning my-3" id="alert"></div>
+          </div>
+          <button id="submitButton" type="submit" class="btn btn-lg btn-primary my-3 mb-4 px-5">Calculate</button>
+          <p>
+            <a href="./about.html#limitations-disclaimers">Limitations and disclaimers</a>
+          </p>      
         </form>
       </div>
-      <div class="col-xs-12 col-xm-12 col-md-6">
-        <div id="graph"></div>
+      <div class="col-md-12 col-lg-8">
+        <div class="card">
+          <div class="card-header">
+            <strong>Calculation Output</strong>
+          </div>
+          <div class="card-body">
+            <div id="graph"></div>
+            <hr>
+            <label class= "form-text mb-1"><strong>F-Angle</strong></label>
+            <div id="fAngleOutput" class="p-2 mb-3 rounded bg-light w-50">&nbsp;</div>
+          </div>
+        </div>
       </div>
     </div>     
   </div>
-  <script src="main.js"></script>
   <script src="./assets/bootstrap/bootstrap.v5.bundle.min.js"></script>
+  <script src="main.js"></script>
+ 
 </body>
 </html>
