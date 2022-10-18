@@ -18,6 +18,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12">
         <h3>F-Angle Tool</h3>
+        <p>The Fahrböschung (F-) angle is the angle between the crown of a landslide source and the toe of the landslide deposit.</p>
           <ul class="nav nav-tabs">
             <li class="nav-item secondary-tab">
               <a class="nav-link" href="./about.html">About</a>
@@ -42,7 +43,7 @@
             <div class="card-body">
               <div class="mb-3">
                 <label class="form-text mb-1 me-1" for="angle">Landslide Type</label>
-                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide type.">
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Based on Hungr 2014. Relationships have only been established for the types in the drop down list" alt="Tooltip icon for landslide type.">
                 <select name="type" id="type" class="form-control form-select">
                   <option value="dryDebris">Debris Avalanche dry</option>
                   <option value="wetDebris">Debris Avalanche wet</option>
@@ -52,19 +53,36 @@
               </div>
               <div class="mb-3">
                 <label class="form-text mb-1 me-1" for="angle">Landslide Volume (m<sup>3</sup>)</label>
-                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="An estimate for the landslide volume" alt="Tooltip icon for landslide volume.">
                 <div class="row align-items-center">
                   <div class="col">
-                    <input id="volumeInput" type="range" min="27" max="71">
+                    <select name="volume1" id="volume1" class="form-control form-select">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
                   </div>
                   <div class="col">
-                    <input class="form-control" name="volume" id="volumeOutput" readonly></input>
+                    <select name="volume2" id="volume2" class="form-control form-select">
+                      <option value="10">10</option>
+                      <option value="100">100</option>
+                      <option value="1000">1000</option>
+                      <option value="10000">10000</option>
+                      <option value="100000">100000</option>
+                      <option value="1000000">1000000</option>
+                    </select>
                   </div>
                 </div>
               </div>
               <div class="mb-3">
                 <label class="form-text mb-1 me-1" for="angle">Probability of Exceedence (%)</label>
-                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Sample text Sample text Sample text Sample text Sample text" alt="Tooltip icon for landslide volume.">
+                <img src="./assets/images/tooltip-icon.png" data-bs-toggle="tooltip" width="13" class="tooltip-icon" title="Mean is 50%. Select 16% or 2% for more conservative F-angle values" alt="Tooltip icon for landslide volume.">
                 <select name="POE" id="POE" class="form-control form-select">
                   <option value="50">50</option>
                   <option value="16">16</option>

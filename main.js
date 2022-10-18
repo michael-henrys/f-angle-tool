@@ -31,17 +31,6 @@ for(let i = 0; i < 8; i++){
     volumeClasses.push(value)
   }
 }
-console.log(volumeClasses)
-
-//add function to update volume on slider change 
-const volumeInput = document.getElementById('volumeInput')
-volumeInput.addEventListener('input', updateVolume)
-
-function updateVolume() {
-  volumeIndex = volumeInput.value
-  const volumeDisplay = document.getElementById('volumeOutput')
-  volumeDisplay.value = `${Number(volumeClasses[volumeIndex]).toFixed(0)}`
-}
 
 //hide alert 
 const alert = document.getElementById('alert')
@@ -54,23 +43,20 @@ form.addEventListener('submit', function(e) {
   update()
 })
 
-//show graph
-updateGraph()
-
-//update volume
-updateVolume()
-
+//trigger tooltips
 var tooltips = document.getElementsByClassName('tooltip-icon')
 for (var i = 0; i < tooltips.length; i++) {
   var tooltip = new bootstrap.Tooltip(tooltips[i])
 }
-  
+
+//show graph
+updateGraph()
 
 //get data from form
 function getFormData() {
   return {
     type: form.elements.type.value,
-    volume: form.elements.volume.value,
+    volume: form.elements.volume1.value * form.elements.volume2.value,
     POE: form.elements.POE.value,
   }
 }
@@ -88,6 +74,7 @@ function update() {
     const type = data.type
     const volume = data.volume
     const POE = data.POE
+    console.log(volume)
     const fAngle = calculateFAngle(type, volume, POE)
     //update f angle in the DOM
     fAngleDisplay.innerHTML = `${fAngle.toFixed(2)}°`
@@ -220,8 +207,6 @@ function updateGraph(formData){
         color: 'lightgrey',
       }
     }
-
-    
 
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
