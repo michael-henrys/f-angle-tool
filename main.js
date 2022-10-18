@@ -43,6 +43,12 @@ form.addEventListener('submit', function(e) {
   update()
 })
 
+//trigger tooltips
+var tooltips = document.getElementsByClassName('tooltip-icon')
+for (var i = 0; i < tooltips.length; i++) {
+  var tooltip = new bootstrap.Tooltip(tooltips[i])
+}
+
 //show graph
 updateGraph()
 
