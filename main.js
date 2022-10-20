@@ -24,7 +24,7 @@ const constants = {
 
 //set volume classes
 let volumeClasses = []
-for(let i = 0; i < 8; i++){
+for(let i = 0; i < 9; i++){
   let step = Math.pow(10, -1+i)
   for(let j = 0; j < 9; j++){
     value = (step+(j*step)).toFixed(1)
@@ -338,7 +338,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [0.01, 7],
+      range: [0.01, 7.2],
       fixedrange: true
     },
     yaxis: {
