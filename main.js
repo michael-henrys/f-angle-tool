@@ -355,7 +355,7 @@ function updateGraph(formData){
   }
   //define config for graph
   const config = {
-    displayModeBar: true,
+    displayModeBar: false,
     displaylogo: false,
     modeBarButtonsToRemove: ['select2d', 'lasso2d'],
     responsive: true,
