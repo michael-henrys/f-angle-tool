@@ -211,16 +211,16 @@ function updateGraph(formData){
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
       case 'dryDebris':
-        xValues = volumeClasses.filter(x => x <= 100000 && x >= 10)
+        xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'rockAvalanche':
         xValues = volumeClasses.filter(x => x >= 100000)
         break
       case 'wetDebris':
-        xValues = volumeClasses.filter(x => x <= 100000 && x >= 10)
+        xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'debrisFlow':
-        xValues = volumeClasses.filter(x => x <= 1000000 && x >= 10)
+        xValues = volumeClasses.filter(x => x <= 1000000)
         break
       default:
         break    
