@@ -1,3 +1,4 @@
+
 //define model constants
 const constants = {
   rockAvalanche: {
@@ -74,10 +75,11 @@ function update() {
     const type = data.type
     const volume = data.volume
     const POE = data.POE
-    console.log(volume)
-    const fAngle = calculateFAngle(type, volume, POE)
+    const fAngle = Math.round(calculateFAngle(type, volume, POE))
     //update f angle in the DOM
-    fAngleDisplay.innerHTML = `${fAngle.toFixed(2)}°`
+    fAngleDisplay.innerHTML = `${fAngle}°`
+    //enable export button 
+    document.getElementById('exportPdf').disabled = false
     //update graph
     updateGraph(data)
   }
@@ -201,7 +203,7 @@ function updateGraph(formData){
       y: realData[formData.type].fAngle,
       mode: 'markers',
       type: 'scatter',
-      name: 'Real Data',
+      name: 'Observed Data',
       hovertext: realData[formData.type].source,
       marker: {
         color: 'lightgrey',
@@ -338,7 +340,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [0.01, 7.2],
+      range: [0.01, 10],
       fixedrange: true
     },
     yaxis: {
@@ -348,7 +350,8 @@ function updateGraph(formData){
         standoff: 15 
       },
       range: [0, 50],
-      fixedrange: true
+      fixedrange: true,
+      hoverformat: '.0f'
     },
     autosize: true,
     height: 600
@@ -370,4 +373,68 @@ function updateGraph(formData){
   //plot graph
   Plotly.newPlot( graph, data, layout, config )
 }
+
+const exportPdfButton = document.getElementById('exportPdf')
+exportPdfButton.addEventListener('click', () => {
+  const doc = new jspdf.jsPDF({})
+  doc.setFont(undefined, 'bold')
+  doc.text('F-Angle Report', 10, 20)
+  doc.setFontSize(12)
+  const dateString = new Date().toISOString().split('T')[0]
+  doc.text(`${dateString}`, 170, 20)
+  doc.text("Variable Inputs", 10, 40)
+  doc.setFont(undefined, 'normal')
+  const data = getFormData()
+  const { type , volume, POE } = getInputVariablesFormattedText(data)
+  doc.text(`Landslide type: ${type}`, 10, 50);
+  doc.text(`Landslide Volume: ${volume}`, 10, 60);
+  doc.text(`Probability of Exceedence: ${POE}`, 10, 70);
+  doc.setFont(undefined, 'bold')
+  doc.text("Calculation Output", 10, 90)
+  doc.setFont(undefined, 'normal')
+  const calculatedFAngle = Math.round(calculateFAngle(data.type, data.volume, data.POE))
+  doc.text(`Calculated F-Angle: ${calculatedFAngle}°`, 10, 100);
+  const graph = document.getElementById('graph')
+  Plotly.toImage(graph,{ format: 'png', width: 720, height: 540 }).then(dataUrl => {
+    doc.addImage(dataUrl,'PNG', 15, 110)
+    doc.save("f-angle-results.pdf")
+  })
+})
+
+function getInputVariablesFormattedText(data) {
+  let type 
+  switch(data.type) {
+    case 'dryDebris':
+      type = 'Debris Avalanche Dry'
+      break
+    case 'wetDebris': 
+      type = 'Debris Avalanche Wet'
+      break
+    case 'debrisFlow':
+      type = 'Debris Flow'
+      break
+    case 'rockAvalanche': 
+      type = 'Rock Avalanche'
+      break
+  }
+  volume = standardForm(data.volume)
+  POE = `${data.POE}%`
+  return {type, volume, POE}
+}
+
+function standardForm(num) {
+	const exponent = Math.abs(Math.floor(Math.log10(Math.abs(num))));
+  const base = Math.floor(num / Math.pow(10, exponent));
+  const superscriptMapping = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+  const superscriptExponent = exponent
+    .toString()
+    .split("")
+    .map((digit) => superscriptMapping[parseInt(digit)])
+    .join("");
+
+  return `${base} x 10${superscriptExponent} m³`;
+}
+
+
+
 
