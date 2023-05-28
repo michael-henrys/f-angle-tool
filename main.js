@@ -377,25 +377,24 @@ function updateGraph(formData){
 const exportPdfButton = document.getElementById('exportPdf')
 exportPdfButton.addEventListener('click', () => {
   const doc = new jspdf.jsPDF({})
-  doc.setFont(undefined, 'bold')
+  doc.setFont('Arial')
   doc.text('F-Angle Report', 10, 20)
   doc.setFontSize(12)
   const dateString = new Date().toISOString().split('T')[0]
   doc.text(`${dateString}`, 170, 20)
-  doc.text("Variable Inputs", 10, 40)
-  doc.setFont(undefined, 'normal')
+  doc.text("Variable Inputs", 10, 35)
   const data = getFormData()
   const { type , volume, POE } = getInputVariablesFormattedText(data)
-  doc.text(`Landslide type: ${type}`, 10, 50);
-  doc.text(`Landslide Volume: ${volume}`, 10, 60);
-  doc.text(`Probability of Exceedence: ${POE}`, 10, 70);
-  doc.setFont(undefined, 'bold')
-  doc.text("Calculation Output", 10, 90)
-  doc.setFont(undefined, 'normal')
+  doc.text(`Landslide type: ${type}`, 10, 45);
+  console.log("volume: ", volume)
+  doc.text(`Landslide Volume: ${volume}`, 10, 55);
+  doc.text(`Probability of Exceedence: ${POE}`, 10, 65);
+  doc.text("Calculation Output", 10, 80)
   const calculatedFAngle = Math.round(calculateFAngle(data.type, data.volume, data.POE))
-  doc.text(`Calculated F-Angle: ${calculatedFAngle}°`, 10, 100);
+  doc.text(`Calculated F-Angle: ${calculatedFAngle}°`, 10, 90);
+  
   const graph = document.getElementById('graph')
-  Plotly.toImage(graph,{ format: 'png', width: 720, height: 540 }).then(dataUrl => {
+  Plotly.toImage(graph,{ format: 'png', width: 600, height: 450 }).then(dataUrl => {
     doc.addImage(dataUrl,'PNG', 15, 110)
     doc.save("f-angle-results.pdf")
   })
@@ -432,7 +431,8 @@ function standardForm(num) {
     .map((digit) => superscriptMapping[parseInt(digit)])
     .join("");
 
-  return `${base} x 10${superscriptExponent} m³`;
+  const outputString = `${base} x 10${superscriptExponent} m³`
+  return outputString;
 }
 
 
