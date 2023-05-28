@@ -25,7 +25,7 @@ const constants = {
 
 //set volume classes
 let volumeClasses = []
-for(let i = 0; i < 9; i++){
+for(let i = 0; i < 11; i++){
   let step = Math.pow(10, -1+i)
   for(let j = 0; j < 9; j++){
     value = (step+(j*step)).toFixed(1)
@@ -213,16 +213,16 @@ function updateGraph(formData){
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
       case 'dryDebris':
-        xValues = volumeClasses.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => (x <= 100000))
         break
       case 'rockAvalanche':
-        xValues = volumeClasses.filter(x => x >= 100000)
+        xValues = volumeClasses.filter(x => x >= 100000 && x <= 9000000)
         break
       case 'wetDebris':
         xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'debrisFlow':
-        xValues = volumeClasses.filter(x => x <= 1000000)
+        xValues = volumeClasses.filter(x => (x <= 1000000))
         break
       default:
         break    
