@@ -386,7 +386,6 @@ exportPdfButton.addEventListener('click', () => {
   const data = getFormData()
   const { type , volume, POE } = getInputVariablesFormattedText(data)
   doc.text(`Landslide type: ${type}`, 10, 45)
-  console.log("volume: ", volume)
   doc.text(`Landslide Volume: ${volume}`, 10, 55)
   doc.text(`Probability of Exceedence: ${POE}`, 10, 65)
   doc.text("Calculation Output", 10, 80)
