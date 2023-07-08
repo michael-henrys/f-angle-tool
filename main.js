@@ -1,3 +1,4 @@
+
 //define model constants
 const constants = {
   rockAvalanche: {
@@ -24,7 +25,7 @@ const constants = {
 
 //set volume classes
 let volumeClasses = []
-for(let i = 0; i < 9; i++){
+for(let i = 0; i < 11; i++){
   let step = Math.pow(10, -1+i)
   for(let j = 0; j < 9; j++){
     value = (step+(j*step)).toFixed(1)
@@ -74,10 +75,11 @@ function update() {
     const type = data.type
     const volume = data.volume
     const POE = data.POE
-    console.log(volume)
-    const fAngle = calculateFAngle(type, volume, POE)
+    const fAngle = Math.round(calculateFAngle(type, volume, POE))
     //update f angle in the DOM
-    fAngleDisplay.innerHTML = `${fAngle.toFixed(2)}°`
+    fAngleDisplay.innerHTML = `${fAngle}°`
+    //enable export button 
+    document.getElementById('exportPdf').disabled = false
     //update graph
     updateGraph(data)
   }
@@ -201,7 +203,7 @@ function updateGraph(formData){
       y: realData[formData.type].fAngle,
       mode: 'markers',
       type: 'scatter',
-      name: 'Real Data',
+      name: 'Observed Data',
       hovertext: realData[formData.type].source,
       marker: {
         color: 'lightgrey',
@@ -211,16 +213,16 @@ function updateGraph(formData){
     //fix xValues to make sure it is the correct range for the landslide type
     switch (formData.type) {
       case 'dryDebris':
-        xValues = volumeClasses.filter(x => x <= 100000)
+        xValues = volumeClasses.filter(x => (x <= 100000))
         break
       case 'rockAvalanche':
-        xValues = volumeClasses.filter(x => x >= 100000)
+        xValues = volumeClasses.filter(x => x >= 100000 && x <= 9000000)
         break
       case 'wetDebris':
         xValues = volumeClasses.filter(x => x <= 100000)
         break
       case 'debrisFlow':
-        xValues = volumeClasses.filter(x => x <= 1000000)
+        xValues = volumeClasses.filter(x => (x <= 1000000))
         break
       default:
         break    
@@ -338,7 +340,7 @@ function updateGraph(formData){
         font: {size: 13},
       },
       type: 'log',
-      range: [0.01, 7.2],
+      range: [0.01, 10],
       fixedrange: true
     },
     yaxis: {
@@ -348,7 +350,8 @@ function updateGraph(formData){
         standoff: 15 
       },
       range: [0, 50],
-      fixedrange: true
+      fixedrange: true,
+      hoverformat: '.0f'
     },
     autosize: true,
     height: 600
@@ -370,4 +373,76 @@ function updateGraph(formData){
   //plot graph
   Plotly.newPlot( graph, data, layout, config )
 }
+
+const exportPdfButton = document.getElementById('exportPdf')
+exportPdfButton.addEventListener('click', () => {
+  const doc = new jspdf.jsPDF({})
+  doc.setFont('Arial')
+  doc.text('F-Angle Report', 10, 20)
+  doc.setFontSize(12)
+  const dateString = new Date().toISOString().split('T')[0]
+  doc.text(`${dateString}`, 170, 20)
+  doc.text("Variable Inputs", 10, 35)
+  const data = getFormData()
+  const { type , volume, POE } = getInputVariablesFormattedText(data)
+  doc.text(`Landslide type: ${type}`, 10, 45)
+  doc.text(`Landslide Volume: ${volume}`, 10, 55)
+  doc.text(`Probability of Exceedence: ${POE}`, 10, 65)
+  doc.text("Calculation Output", 10, 80)
+  const calculatedFAngle = Math.round(calculateFAngle(data.type, data.volume, data.POE))
+  doc.text(`Calculated F-Angle: ${calculatedFAngle}°`, 10, 90)
+  addLimitationsDisclaimers(doc)
+  const graph = document.getElementById('graph')
+  Plotly.toImage(graph,{ format: 'png', width: 600, height: 450 }).then(dataUrl => {
+    doc.addImage(dataUrl,'PNG', 15, 110)
+    doc.save("f-angle-results.pdf")
+  })
+})
+
+function getInputVariablesFormattedText(data) {
+  let type 
+  switch(data.type) {
+    case 'dryDebris':
+      type = 'Debris Avalanche Dry'
+      break
+    case 'wetDebris': 
+      type = 'Debris Avalanche Wet'
+      break
+    case 'debrisFlow':
+      type = 'Debris Flow'
+      break
+    case 'rockAvalanche': 
+      type = 'Rock Avalanche'
+      break
+  }
+  volume = standardForm(data.volume)
+  POE = `${data.POE}%`
+  return {type, volume, POE}
+}
+
+function standardForm(num) {
+	const exponent = Math.abs(Math.floor(Math.log10(Math.abs(num))));
+  const base = Math.floor(num / Math.pow(10, exponent));
+  const superscriptMapping = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+  const superscriptExponent = exponent
+    .toString()
+    .split("")
+    .map((digit) => superscriptMapping[parseInt(digit)])
+    .join("");
+
+  const outputString = `${base} x 10${superscriptExponent} m³`
+  return outputString;
+}
+
+function addLimitationsDisclaimers(doc, y = 240) {
+  doc.setFontSize(8)
+  doc.text("Limitations and Disclaimers", 10, y)
+  doc.setFontSize(6)
+  doc.text("The data and model on which this Tool is based, and the creation of the tool, were prepared by the Institute of Geological & Nuclear Sciences Limited (GNS Science) as part of a New Zealand \nGovernment funded research project (MBIE Endeavour - C05X1709). The information is derived from multiple data sources, including third party data, which are at various scales and resolutions.", 10, y + 4)
+  doc.text("As there is always uncertainty associated with the data used and the models developed from it, GNS Science gives no warranties of any kind concerning its assessment and estimates, \nincluding accuracy, completeness, timeliness or fitness for purpose, and accepts no responsibility for any actions taken based on or reliance placed on the forecasts by any person or organisation. \nGNS Science excludes to the full extent permitted by law any liability to any person or organisation for any loss, damage or expense, direct or indirect, and however caused, whether through \nnegligence or otherwise, resulting from any person or organisation's use of or reliance on the Tool, the results from it and the data it is based on.", 10, y + 10)
+  doc.text("As much of the analysis and assessment relies on inferences from slopes within a particular geology and physiographical setting that were shaken by a particular suite of earthquakes, \nthe applicability of the tool to a specific slope(s) should be considered. It is recommended that on-site verification be carried out to assess whether the tool is applicable for use at a particular site of interest. \nThe Tool is intended to be used by suitably qualified people (e.g., Professional engineering geologists and geotechnical engineers) as part of their regional-scale ‘desktop’ assessment. \nThis Tool should not be used as a replacement or substitute for site- specific analyses and assessments.", 10, y + 21)
+}
+
+
+
 
