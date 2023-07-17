@@ -377,18 +377,26 @@ function updateGraph(formData){
 const exportPdfButton = document.getElementById('exportPdf')
 exportPdfButton.addEventListener('click', () => {
   const doc = new jspdf.jsPDF({})
-  doc.setFont('Arial')
+  doc.setFont(undefined, 'bold')
   doc.text('F-Angle Report', 10, 20)
-  doc.setFontSize(12)
+  //timestamp and logo
+  doc.setFontSize(10)
   const dateString = new Date().toISOString().split('T')[0]
-  doc.text(`${dateString}`, 170, 20)
+  let image = new Image()
+  image.src = 'assets/images/2GNS_logo_HORZ.png'
+  doc.addImage(image, 'png', 150, 10, 40, 20)
+  doc.text(`Generated on ${dateString}`, 150, 35)
+  doc.setFontSize(12)
   doc.text("Variable Inputs", 10, 35)
+  doc.setFont('Arial', 'normal')
   const data = getFormData()
   const { type , volume, POE } = getInputVariablesFormattedText(data)
   doc.text(`Landslide type: ${type}`, 10, 45)
   doc.text(`Landslide Volume: ${volume}`, 10, 55)
   doc.text(`Probability of Exceedence: ${POE}`, 10, 65)
+  doc.setFont('Helvetica', 'bold')
   doc.text("Calculation Output", 10, 80)
+  doc.setFont(undefined, 'normal')
   const calculatedFAngle = Math.round(calculateFAngle(data.type, data.volume, data.POE))
   doc.text(`Calculated F-Angle: ${calculatedFAngle}°`, 10, 90)
   addLimitationsDisclaimers(doc)
@@ -435,13 +443,17 @@ function standardForm(num) {
 }
 
 function addLimitationsDisclaimers(doc, y = 240) {
+  doc.setFont(undefined, 'bold')
   doc.setFontSize(8)
   doc.text("Limitations and Disclaimers", 10, y)
+  doc.setFont(undefined, 'normal')
   doc.setFontSize(6)
   doc.text("The data and model on which this Tool is based, and the creation of the tool, were prepared by the Institute of Geological & Nuclear Sciences Limited (GNS Science) as part of a New Zealand \nGovernment funded research project (MBIE Endeavour - C05X1709). The information is derived from multiple data sources, including third party data, which are at various scales and resolutions.", 10, y + 4)
   doc.text("As there is always uncertainty associated with the data used and the models developed from it, GNS Science gives no warranties of any kind concerning its assessment and estimates, \nincluding accuracy, completeness, timeliness or fitness for purpose, and accepts no responsibility for any actions taken based on or reliance placed on the forecasts by any person or organisation. \nGNS Science excludes to the full extent permitted by law any liability to any person or organisation for any loss, damage or expense, direct or indirect, and however caused, whether through \nnegligence or otherwise, resulting from any person or organisation's use of or reliance on the Tool, the results from it and the data it is based on.", 10, y + 10)
   doc.text("As much of the analysis and assessment relies on inferences from slopes within a particular geology and physiographical setting that were shaken by a particular suite of earthquakes, \nthe applicability of the tool to a specific slope(s) should be considered. It is recommended that on-site verification be carried out to assess whether the tool is applicable for use at a particular site of interest. \nThe Tool is intended to be used by suitably qualified people (e.g., Professional engineering geologists and geotechnical engineers) as part of their regional-scale ‘desktop’ assessment. \nThis Tool should not be used as a replacement or substitute for site- specific analyses and assessments.", 10, y + 21)
 }
+
+
 
 
 
